@@ -1,0 +1,45 @@
+.icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: $gray;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $green-color;
+  }
+
+  &--heart {
+    background-image: url("../img/heart.png");
+  }
+
+  &--mouse {
+    background-image: url("../img/mouse.png");
+    background-position: center 40%;
+  }
+
+  &--lamp {
+    background-image: url("../img/lamp.png");
+  }
+
+  &--settings {
+    background-image: url("../img/settings.png");
+  }
+
+  &--roller {
+    background-image: url("../img/roller.png");
+  }
+
+  &--gamepad {
+    background-image: url("../img/gamepad.png");
+    background-position: center 40%;
+  }
+
+  &--socket {
+    background-image: url("../img/socket.png");
+    background-position: 60% center;
+  }
+}
