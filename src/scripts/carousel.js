@@ -74,7 +74,7 @@ $('.slider').each(function() {
   });
   
   $.each($slides, function(index) {
-    var $button = $('<a class="slide_btn">&bull;</a>');
+    var $button = $('<a class="slide_btn"></a>');
     
     if (index === currentIndex) {
       $button.addClass('active');
