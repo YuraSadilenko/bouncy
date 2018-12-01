@@ -4,6 +4,57 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "big-john";
+  src: url("fonts/big-john.otf");
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #81868e;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.icon:hover {
+  cursor: pointer;
+  background-color: #19bd9a;
+}
+
+.icon--heart {
+  background-image: url("../img/heart.png");
+}
+
+.icon--mouse {
+  background-image: url("../img/mouse.png");
+  background-position: center 40%;
+}
+
+.icon--lamp {
+  background-image: url("../img/lamp.png");
+}
+
+.icon--settings {
+  background-image: url("../img/settings.png");
+}
+
+.icon--roller {
+  background-image: url("../img/roller.png");
+}
+
+.icon--gamepad {
+  background-image: url("../img/gamepad.png");
+  background-position: center 40%;
+}
+
+.icon--socket {
+  background-image: url("../img/socket.png");
+  background-position: 60% center;
+}
+
 .btn {
   display: inline-block;
   padding: 0 20px;
