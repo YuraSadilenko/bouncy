@@ -93,6 +93,12 @@
 .portfolio {
   background: #f3f3f3;
   padding: 80px 0 101px;
+}
+
+.portfolio__container {
+  background: #f3f3f3;
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -138,10 +144,163 @@
   width: 0%;
   margin: 15px auto 0;
   border-bottom: transparent 2px solid;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .portfolio__link:hover:after {
   border-bottom: #19bd9a 2px solid;
-  width: 50%;
+  width: 60%;
+}
+
+.portfolio__gallery {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio__column {
+  max-width: 100%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.portfolio__column:last-child {
+  margin-right: 0;
+}
+
+.portfolio__column-container {
+  display: flex;
+  margin-right: 10px;
+}
+
+.portfolio__column-container right:last-child {
+  margin-right: 0;
+}
+
+.portfolio__picture-box {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.portfolio__picture-box:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio__picture {
+  display: block;
+  width: 1000px;
+  max-width: 100%;
+}
+
+.portfolio__gallery-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+}
+
+.portfolio__gallery-content:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__gallery-content:hover > .portfolio__gallery-central-container {
+  left: 50%;
+}
+
+.portfolio__gallery-central-container {
+  padding-top: 10px;
+  height: 182px;
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: -50%;
+  transition: all 0.2s;
+}
+
+.portfolio__gallery-title {
+  font: 20px "Source Sans Pro", sans-serif;
+  color: #19bd9a;
+  text-transform: uppercase;
+}
+
+.portfolio__gallery-title:after {
+  content: "";
+  display: block;
+  width: 20%;
+  margin: 10% 0 0;
+  border-bottom: #19bd9a 2px solid;
+}
+
+.portfolio__gallery-paragraph {
+  margin: 10% 0 0;
+  font: 12px "Open Sans", sans-serif;
+  color: #ffffff;
+}
+
+.portfolio__gallery-link {
+  margin: 10% 0 0;
+  text-decoration: none;
+  border: 1px solid #000000;
+  background: #000000;
+  display: inline-block;
+  width: 20px;
+  border-radius: 50%;
+  padding: 0 4px;
+}
+
+.portfolio__gallery-link:hover > .portfolio__gallery-icon {
+  fill: #81868e;
+}
+
+.portfolio__gallery-icon {
+  fill: #ffffff;
+  transition: all 0.5s;
+}
+
+.portfolio__bottom-block {
+  margin-top: 40px;
+  background: url(img/t-shirt.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.portfolio__bottom-block-mask {
+  background: rgba(0, 204, 153, 0.8);
+  padding: 58px 0 57px;
+}
+
+.portfolio__bottom-block-paragraph {
+  font: 20px "Open Sans", sans-serif;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.portfolio__bottom-block-paragraph--select {
+  font-weight: bold;
+}
+
+.portfolio__bottom-block-btn {
+  margin-top: 34px;
+}
+
+@media screen and (max-width: 960px) {
+  .portfolio__item {
+    margin-top: 10px;
+  }
+  .portfolio__gallery {
+    flex-wrap: wrap;
+  }
+  .portfolio__column-container {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio__column-container {
+    margin-right: 0px;
+    flex-wrap: wrap;
+  }
 }

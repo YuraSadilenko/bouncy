@@ -1,7 +1,13 @@
 .portfolio {
   background: $light-gray;
   padding: 80px 0 101px;
-  text-align: center;
+
+  &__container {
+    background: $light-gray;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
   &__title {
     color: $dark-gray;
@@ -43,14 +49,169 @@
       width: 0%;
       margin: 15px auto 0;
       border-bottom: transparent 2px solid;
-      transition: 0.5s;
+      transition: 0.2s;
     }
 
     &:hover {
       &:after {
         border-bottom: $green-color 2px solid;
-        width: 50%;
+        width: 60%;
       }
+    }
+  }
+
+  &__gallery {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__column {
+    max-width: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__column-container {
+    display: flex;
+    margin-right: 10px;
+    right:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__picture-box {
+    margin-bottom: 10px;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__picture {
+    display: block;
+    width: 1000px;
+    max-width: 100%;
+  }
+
+  &__gallery-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    &:hover > .portfolio__gallery-central-container {
+      left: 50%;
+    }
+  }
+
+  &__gallery-central-container {
+    padding-top: 10px;
+    height: 182px;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: -50%;
+    transition: all 0.2s;
+  }
+
+  &__gallery-title {
+    font: 20px $source-sans;
+    color: $green-color;
+    text-transform: uppercase;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 20%;
+      margin: 10% 0 0;
+      border-bottom: $green-color 2px solid;
+    }
+  }
+
+  &__gallery-paragraph {
+    margin: 10% 0 0;
+    font: 12px $open-sans;
+    color: $btn-color-white;
+  }
+
+  &__gallery-link {
+    margin: 10% 0 0;
+    text-decoration: none;
+    border: 1px solid $color-black;
+    background: $color-black;
+    display: inline-block;
+    width: 20px;
+    border-radius: 50%;
+    padding: 0 4px;
+
+    &:hover > .portfolio__gallery-icon {
+      fill: $gray;
+    }
+  }
+
+  &__gallery-icon {
+    fill: $btn-color-white;
+    transition: all 0.5s;
+  }
+
+  &__bottom-block {
+    margin-top: 40px;
+    background: url(img/t-shirt.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  &__bottom-block-mask {
+    background: rgba(0, 204, 153, 0.8);
+    padding: 58px 0 57px;
+  }
+
+  &__bottom-block-paragraph {
+    font: 20px $open-sans;
+    color: $btn-color-white;
+    letter-spacing: 2px;
+
+    &--select {
+      font-weight: bold;
+    }
+  }
+
+  &__bottom-block-btn {
+    margin-top: 34px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .portfolio {
+    &__item {
+      margin-top: 10px;
+    }
+    &__gallery {
+      flex-wrap: wrap;
+    }
+
+    &__column-container {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio {
+    &__column-container {
+      margin-right: 0px;
+      flex-wrap: wrap;
     }
   }
 }
