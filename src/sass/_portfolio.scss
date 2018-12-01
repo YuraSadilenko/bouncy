@@ -106,7 +106,7 @@
     text-align: left;
 
     &:hover {
-      background: rgba(0, 0, 0, 0.8);
+      background: $dark-black;
     }
 
     &:hover > .portfolio__gallery-central-container {
@@ -175,7 +175,7 @@
   }
 
   &__bottom-block-mask {
-    background: rgba(0, 204, 153, 0.8);
+    background: $dark-blue;
     padding: 58px 0 57px;
   }
 
