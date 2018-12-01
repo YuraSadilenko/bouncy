@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Source+Sans+Pro");
 * {
   margin: 0;
   padding: 0;
@@ -54,4 +53,44 @@
 .icon--socket {
   background-image: url("../img/socket.png");
   background-position: 60% center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 32px;
+  text-decoration: none;
+  border-radius: 20px;
+  background-size: 0 100%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-size: 100% 100%;
+}
+
+.btn--light {
+  color: #ffffff;
+  background-image: linear-gradient(#ffffff, #ffffff);
+  border: 1px solid #ffffff;
+}
+
+.btn--light:hover {
+  color: #333b46;
+  background-color: #ffffff;
+}
+
+.btn--dark {
+  color: #333b46;
+  background-image: linear-gradient(#333b46, #333b46);
+  border: 1px solid #333b46;
+}
+
+.btn--dark:hover {
+  color: #ffffff;
+  background-color: #333b46;
 }
