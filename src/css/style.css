@@ -381,12 +381,17 @@ a.slide_btn {
   }
   .portfolio__column-container {
     margin-right: 0px;
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .portfolio__column-container {
+  .portfolio__column {
     margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .portfolio__column-container {
+    margin: 0px;
     flex-wrap: wrap;
   }
 }

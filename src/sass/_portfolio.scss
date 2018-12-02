@@ -205,14 +205,20 @@
 
     &__column-container {
       margin-right: 0px;
+      margin-bottom: 10px;
     }
   }
 }
 
 @media screen and (max-width: 480px) {
   .portfolio {
-    &__column-container {
+    &__column {
       margin-right: 0px;
+      margin-bottom: 10px;
+    }
+
+    &__column-container {
+      margin: 0px;
       flex-wrap: wrap;
     }
   }
