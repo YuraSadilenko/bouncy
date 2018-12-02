@@ -4,7 +4,7 @@
 
   &__container {
     background: $light-gray;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
   }
@@ -194,13 +194,21 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1140px) {
   .portfolio {
+    &__container {
+      width: 90%;
+    }
+
     &__item {
       margin-top: 10px;
     }
     &__gallery {
       flex-wrap: wrap;
+    }
+
+    &__gallery-central-container {
+      height: 20rem;
     }
 
     &__column-container {
@@ -210,8 +218,11 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   .portfolio {
+    &__gallery-central-container {
+      height: 25rem;
+    }
     &__column {
       margin-right: 0px;
       margin-bottom: 10px;
