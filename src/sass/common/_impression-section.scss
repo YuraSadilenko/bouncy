@@ -3,7 +3,6 @@
   height: 43rem;
   width: 100%;
   align-items: flex-end;
-  padding: 10rem 8rem;
 
   &__background {
     width: 100%;
@@ -14,31 +13,61 @@
     filter: grayscale(100%) brightness(20%);
   }
 
-  &__text-block {
-    width: 50%;
-    align-self: center;
-  }
+  &__items {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 39.2rem;
+    padding: 10rem 2rem 10rem 4rem;
 
-  &__text-item {
-    color: $dark-gray;
-    filter: none;
+    &__text-block {
+      width: 50%;
+      align-self: center;
 
-    &--title {
-      font-size: 2rem;
-      color: $btn-color-white;
-      filter: brightness(100%) grayscale(0);
+      &__text-item {
+        color: $dark-gray;
+        filter: none;
+
+        &--title {
+          font-size: 2rem;
+          color: $btn-color-white;
+          filter: brightness(100%) grayscale(0);
+        }
+
+        &--description {
+          font-size: 1.6rem;
+        }
+
+        &--author {
+          font-size: 1.4rem;
+        }
+
+        &--position {
+          font-size: 1.4rem;
+        }
+      }
     }
 
-    &--description {
-      font-size: 1.6rem;
-    }
+    &__video-block {
+      width: 50%;
 
-    &--author {
-      font-size: 1.4rem;
-    }
+      &__background {
+        width: 100%;
+        height: 33.3rem;
+        max-height: 100%;
+        max-width: 41rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../img/monitor.png");
+      }
 
-    &--position {
-      font-size: 1.4rem;
+      &__video {
+        max-width: 375px;
+        max-height: 230px;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
