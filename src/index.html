@@ -42,16 +42,16 @@
           </p>
         </div>
         <div class="our-services__content">
-          <div class="our-services__column">
+          <input type="radio" name="switcher" id="settings" class="our-services__hidden our-services__hidden--first" checked="checked">
+            <input type="radio" name="switcher" id="roller" value="roller" class="our-services__hidden our-services__hidden--second">
+            <input type="radio" name="switcher" id="game" value="game" class="our-services__hidden our-services__hidden--third">
+            <input type="radio" name="switcher" id="connector" value="connector" class="our-services__hidden our-services__hidden--fourth">
+          <div class="our-services__column">                 
             <div class="our-services__switches">
-              <label for="settings" class="our-services__switcher icon icon--settings"></label>
-              <input type="radio" name="switcher" id="settings" class="our-services__hidden">
-              <label for="roller" class="our-services__switcher icon icon--roller"></label>
-              <input type="radio" name="switcher" id="roller" value="roller" class="our-services__hidden">
-              <label for="game" class="our-services__switcher icon icon--gamepad"></label>
-              <input type="radio" name="switcher" id="game" value="game" class="our-services__hidden">
-              <label for="connector" class="our-services__switcher icon icon--socket"></label>
-              <input type="radio" name="switcher" id="connector" value="connector" class="our-services__hidden">               
+              <label for="settings" class="our-services__switcher our-services__switcher--first icon icon--settings"></label>              
+              <label for="roller" class="our-services__switcher our-services__switcher--second icon icon--roller"></label>              
+              <label for="game" class="our-services__switcher our-services__switcher--third icon icon--gamepad"></label>              
+              <label for="connector" class="our-services__switcher our-services__switcher--fourth icon icon--socket"></label>                        
             </div>
             <div class="our-services__column-text ">
               <h3 class="our-services__title">Graphic Design</h3>
