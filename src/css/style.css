@@ -213,6 +213,7 @@ a.slide_btn {
 }
 
 .our-price__price-list {
+  margin: 0 auto;
   margin-top: 60px;
   width: 833px;
   max-width: 100%;
