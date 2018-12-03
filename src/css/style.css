@@ -231,6 +231,16 @@ a.slide_btn {
 
 .our-price__premium:hover > .our-price__premium-curtain {
   bottom: 0%;
+  background: #ffffff;
+}
+
+.our-price__premium:hover > .our-price__premium-curtain .our-price__curtain-link {
+  background: #19bd9a;
+  color: #ffffff;
+}
+
+.our-price__premium:hover > .our-price__premium-curtain .our-price__list-item {
+  color: #81868e;
 }
 
 .our-price__premium-head {
@@ -262,7 +272,7 @@ a.slide_btn {
   right: 0;
   bottom: 100%;
   left: 0;
-  background: #ffffff;
+  background: transparent;
   transition: 0.8s;
   text-align: left;
 }
@@ -275,7 +285,7 @@ a.slide_btn {
 
 .our-price__list-item {
   list-style-type: none;
-  color: #81868e;
+  color: transparent;
   font: 1.4rem "Open Sans", sans-serif;
   margin-top: 13px;
   letter-spacing: 0.1rem;
@@ -283,8 +293,8 @@ a.slide_btn {
 
 .our-price__curtain-link {
   display: block;
-  background: #19bd9a;
-  color: #ffffff;
+  background: transparent;
+  color: transparent;
   padding: 20px 0;
   font: bold 2rem "Open Sans", sans-serif;
   letter-spacing: 0.1rem;

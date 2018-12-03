@@ -53,6 +53,16 @@
 
     &:hover > .our-price__premium-curtain {
       bottom: 0%;
+      background: $btn-color-white;
+
+      .our-price__curtain-link {
+        background: $green-color;
+        color: $btn-color-white;
+      }
+
+      .our-price__list-item {
+        color: $gray;
+      }
     }
   }
 
@@ -85,7 +95,7 @@
     right: 0;
     bottom: 100%;
     left: 0;
-    background: $btn-color-white;
+    background: transparent;
     transition: 0.8s;
     text-align: left;
   }
@@ -98,7 +108,7 @@
 
   &__list-item {
     list-style-type: none;
-    color: $gray;
+    color: transparent;
     font: 1.4rem $open-sans;
     margin-top: 13px;
     letter-spacing: 0.1rem;
@@ -106,8 +116,8 @@
 
   &__curtain-link {
     display: block;
-    background: $green-color;
-    color: $btn-color-white;
+    background: transparent;
+    color: transparent;
     padding: 20px 0;
     font: bold 2rem $open-sans;
     letter-spacing: 0.1rem;
