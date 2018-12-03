@@ -1,0 +1,155 @@
+.section-title {
+  width: 463px;
+  max-width: 100%;
+  text-align: center;
+
+  &__title {
+    color: $dark-gray;
+    font: 2rem $source-sans;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+
+  &__paragraph {
+    color: $gray;
+    font: 1.4rem $open-sans;
+    margin-top: 40px;
+    letter-spacing: 0.1rem;
+
+    &--light {
+      color: $btn-color-white;
+    }
+  }
+}
+
+.our-price {
+  background: $light-gray;
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0 100px;
+  }
+
+  &__price-title {
+    margin: 0 auto;
+  }
+
+  &__price-list {
+    margin-top: 60px;
+    width: 833px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__premium {
+    width: 235px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    background: $btn-color-white;
+
+    &:hover > .our-price__premium-curtain {
+      bottom: 0%;
+    }
+  }
+
+  &__premium-head {
+    background: $green-color;
+    color: $btn-color-white;
+    padding: 20px 0;
+    font: bold 2rem $open-sans;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+
+  &__amount {
+    margin-top: 67px;
+    font: bold 4rem $source-sans;
+    color: $green-color;
+  }
+
+  &__amount-title {
+    color: $gray;
+    font: 2rem $open-sans;
+    letter-spacing: 0.1rem;
+    padding-bottom: 60px;
+  }
+
+  &__premium-curtain {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    background: $btn-color-white;
+    transition: 0.8s;
+    text-align: left;
+  }
+
+  &__list {
+    width: 172px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  &__list-item {
+    list-style-type: none;
+    color: $gray;
+    font: 1.4rem $open-sans;
+    margin-top: 13px;
+    letter-spacing: 0.1rem;
+  }
+
+  &__curtain-link {
+    display: block;
+    background: $green-color;
+    color: $btn-color-white;
+    padding: 20px 0;
+    font: bold 2rem $open-sans;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .our-price {
+    &__premium {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .our-price {
+    width: 90%;
+    &__price-list {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__premium {
+      width: 80%;
+      margin-right: 0px;
+      margin-top: 20px;
+      &:first-child {
+        margin-top: 0px;
+      }
+    }
+  }
+}
