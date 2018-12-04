@@ -105,6 +105,7 @@ html {
   height: 43rem;
   width: 100%;
   align-items: flex-end;
+  position: relative;
 }
 
 .impression-section__background {
@@ -122,12 +123,14 @@ html {
   width: 100%;
   height: 100%;
   max-height: 39.2rem;
-  padding: 10rem 2rem 10rem 4rem;
+  padding: 0 4rem;
 }
 
 .impression-section__items__text-block {
-  width: 50%;
-  align-self: center;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding: 10rem 0;
 }
 
 .impression-section__items__text-block__text-item {
@@ -154,22 +157,30 @@ html {
 }
 
 .impression-section__items__video-block {
+  display: inline-block;
   width: 50%;
+  height: 100%;
+  position: relative;
+  vertical-align: top;
 }
 
 .impression-section__items__video-block__background {
+  position: absolute;
+  top: -3.8rem;
   width: 100%;
+  right: 0;
   height: 33.3rem;
   max-height: 100%;
   max-width: 41rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../img/monitor.png");
+  text-align: center;
 }
 
 .impression-section__items__video-block__video {
-  max-width: 375px;
-  max-height: 230px;
+  max-width: 37.5rem;
+  max-height: 23rem;
   width: 100%;
   height: 100%;
 }
