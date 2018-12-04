@@ -1,11 +1,148 @@
 .page-header {
-  padding: 40px 100px;
+  padding: 40px 100px 75px;
   background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   &__logo {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  &__home-link {
     font-family: $big-john;
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    text-decoration: none;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $btn-color-white;
+  }
+
+  &__main-nav {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 0 2rem;
+    font-family: $open-sans;
+    text-decoration: none;
+    color: $btn-color-white;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+
+    &:hover {
+      border-color: $btn-color-white;
+    }
+  }
+
+
+  &__text-block {
+    text-align: center;
+    margin: 22rem 0;
+    color: white;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    font-family: $source-sans;
+    font-weight: normal;
+    font-size: 3.5rem;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: $open-sans;
+    font-size: 1.6rem;
+  }
+
+  &__slide-bottom {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $gray;
+    transition: all 0.5s;
+
+
+    &:hover {
+      background-color: $green-color;
+      transform: scale(1.3);
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      border: 1px solid transparent;
+      border-bottom-color: #ffffff;
+      border-right-color: #ffffff;
+      transform-origin: 50%;
+      transform: translate(-50%, -70%) rotate(45deg);
+    }
+  }
+}
+
+@media screen and (max-width: 966px) {
+  .page-header {
+    &__logo {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 860px){
+  .page-header {
+    &__top {
+      flex-direction: column;
+    }
+
+    &__logo {
+      margin-bottom: 2rem;
+    }
+
+    &__home-link {
+      font-size: 4rem;
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__link {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    &__text-block {
+      margin: 6rem 0;
+    }
   }
 }
