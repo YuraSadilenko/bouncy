@@ -4,6 +4,7 @@
   width: 100%;
   align-items: flex-end;
   position: relative;
+  font-family: $source-sans;
 
   &__background {
     width: 100%;
@@ -31,23 +32,34 @@
       &__text-item {
         color: $dark-gray;
         filter: none;
+        text-transform: uppercase;
 
         &--title {
           font-size: 2rem;
           color: $btn-color-white;
+          letter-spacing: 0.2rem;
           filter: brightness(100%) grayscale(0);
+          padding-bottom: 2rem;
         }
 
         &--description {
           font-size: 1.6rem;
+          padding: 2rem 0;
+          text-transform: none;
         }
 
         &--author {
           font-size: 1.4rem;
+          font-weight: bold;
+          padding: 1rem 0;
         }
 
         &--position {
           font-size: 1.4rem;
+        }
+
+        &--green {
+          color: $green-color;
         }
       }
     }
@@ -74,9 +86,6 @@
       }
 
       &__video {
-        //position: absolute;
-        //left: 0;
-        //top: 0;
         max-width: 37.5rem;
         max-height: 23rem;
         width: 100%;

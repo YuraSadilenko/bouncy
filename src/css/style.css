@@ -106,6 +106,7 @@ html {
   width: 100%;
   align-items: flex-end;
   position: relative;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .impression-section__background {
@@ -136,24 +137,35 @@ html {
 .impression-section__items__text-block__text-item {
   color: #81868e;
   filter: none;
+  text-transform: uppercase;
 }
 
 .impression-section__items__text-block__text-item--title {
   font-size: 2rem;
   color: #ffffff;
+  letter-spacing: 0.2rem;
   filter: brightness(100%) grayscale(0);
+  padding-bottom: 2rem;
 }
 
 .impression-section__items__text-block__text-item--description {
   font-size: 1.6rem;
+  padding: 2rem 0;
+  text-transform: none;
 }
 
 .impression-section__items__text-block__text-item--author {
   font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1rem 0;
 }
 
 .impression-section__items__text-block__text-item--position {
   font-size: 1.4rem;
+}
+
+.impression-section__items__text-block__text-item--green {
+  color: #19bd9a;
 }
 
 .impression-section__items__video-block {
