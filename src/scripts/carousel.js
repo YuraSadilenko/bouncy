@@ -27,15 +27,15 @@ $('.slider').each(function() {
     }
     
     $slides.eq(newIndex).css({
-      // display: 'flex',
+      display: 'flex',
       left: slideLeft
     });
     $group.animate({
       left: animateLeft
     }, function() {
-      // $slides.eq(currentIndex).css({
-      //   // display: 'none'
-      // });
+      $slides.eq(currentIndex).css({
+        display: 'none'
+      });
       $slides.eq(newIndex).css({
         left: 0
       });
@@ -57,21 +57,21 @@ $('.slider').each(function() {
     }, 4000);
   }
   
-  $('.next_btn').on('click', function() {
-    if (currentIndex < ($slides.length - 1)) {
-      move(currentIndex + 1);
-    } else {
-      move(0);
-    }
-  });
+  // $('.next_btn').on('click', function() {
+  //   if (currentIndex < ($slides.length - 1)) {
+  //     move(currentIndex + 1);
+  //   } else {
+  //     move(0);
+  //   }
+  // });
   
-  $('.previous_btn').on('click', function() {
-    if (currentIndex !== 0) {
-      move(currentIndex - 1);
-    } else {
-      move(3);
-    }
-  });
+  // $('.previous_btn').on('click', function() {
+  //   if (currentIndex !== 0) {
+  //     move(currentIndex - 1);
+  //   } else {
+  //     move(3);
+  //   }
+  // });
   
   $.each($slides, function(index) {
     var $button = $('<a class="slide_btn"></a>');

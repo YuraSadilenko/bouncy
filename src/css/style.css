@@ -168,6 +168,7 @@ a.slide_btn {
   display: flex;
   flex-direction: column;
   font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .team--box {
@@ -187,13 +188,52 @@ a.slide_btn {
 
 .team__img-box {
   width: 30%;
-  height: 70%;
+  height: 85%;
   overflow: hidden;
 }
 
 .team__photo {
   width: 100%;
   height: 100%;
+}
+
+.team__rate {
+  color: #81868e;
+  text-align: right;
+}
+
+.team__rate--name {
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
+.team__rate--position {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.team__rate--description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.team__rate--progress {
+  font-size: 1.5rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.team__rate--skills {
+  text-align: left;
+}
+
+.progress {
+  margin-bottom: 1rem;
+  font-size: .3rem;
+  width: 100%;
+  background-color: rgba(0, 204, 153, 0.8);
 }
 
 .section-title {
