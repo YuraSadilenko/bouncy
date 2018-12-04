@@ -1,0 +1,223 @@
+.portfolio {
+  background: $light-gray;
+  padding: 80px 0 101px;
+
+  &__container {
+    background: $light-gray;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 auto;
+  }
+
+  &__list {
+    margin-top: 80px;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 2rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: $dark-gray;
+    font: 1.6rem $open-sans;
+    text-decoration: none;
+    &:after {
+      content: "";
+      display: block;
+      width: 0%;
+      margin: 15px auto 0;
+      border-bottom: transparent 2px solid;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      &:after {
+        border-bottom: $green-color 2px solid;
+        width: 60%;
+      }
+    }
+  }
+
+  &__gallery {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__column {
+    max-width: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__column-container {
+    display: flex;
+    margin-right: 10px;
+    right:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__picture-box {
+    margin-bottom: 10px;
+    position: relative;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__picture {
+    display: block;
+    width: 1000px;
+    max-width: 100%;
+  }
+
+  &__gallery-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+
+    &:hover {
+      background: $dark-black;
+    }
+
+    &:hover > .portfolio__gallery-central-container {
+      left: 50%;
+    }
+  }
+
+  &__gallery-central-container {
+    padding-top: 10px;
+    height: 19rem;
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: -50%;
+    transition: all 0.2s;
+  }
+
+  &__gallery-title {
+    font: 2rem $source-sans;
+    color: $green-color;
+    text-transform: uppercase;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 20%;
+      margin: 10% 0 0;
+      border-bottom: $green-color 2px solid;
+    }
+  }
+
+  &__gallery-paragraph {
+    margin: 10% 0 0;
+    font: 1.2rem $open-sans;
+    color: $btn-color-white;
+  }
+
+  &__gallery-link {
+    margin: 10% 0 0;
+    text-decoration: none;
+    border: 1px solid $color-black;
+    background: $color-black;
+    display: inline-block;
+    width: 2.2rem;
+    border-radius: 50%;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+
+    &:hover > .portfolio__gallery-icon {
+      fill: $gray;
+    }
+  }
+
+  &__gallery-icon {
+    fill: $btn-color-white;
+    transition: all 0.5s;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &__bottom-block {
+    margin-top: 40px;
+    background: url(img/t-shirt.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  &__bottom-block-mask {
+    background: $dark-blue;
+    padding: 58px 0 57px;
+  }
+
+  &__bottom-block-paragraph {
+    font: 2rem $open-sans;
+    color: $btn-color-white;
+    letter-spacing: 2px;
+
+    &--select {
+      font-weight: bold;
+    }
+  }
+
+  &__bottom-block-btn {
+    margin-top: 34px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .portfolio {
+    &__container {
+      width: 90%;
+    }
+
+    &__item {
+      margin-top: 10px;
+    }
+    &__gallery {
+      flex-wrap: wrap;
+    }
+
+    &__gallery-central-container {
+      height: 20rem;
+    }
+
+    &__column-container {
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .portfolio {
+    &__gallery-central-container {
+      height: 25rem;
+    }
+    &__column {
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+
+    &__column-container {
+      margin: 0px;
+      flex-wrap: wrap;
+    }
+  }
+}
