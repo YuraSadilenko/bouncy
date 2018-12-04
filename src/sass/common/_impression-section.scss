@@ -46,6 +46,12 @@
       padding: 2rem 0;
       font-size: 1.6rem;
       text-transform: none;
+
+      hyphens: auto;
+      word-break: break-all;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
     }
 
     &--author {
@@ -93,4 +99,5 @@
     max-height: 23rem;
   }
 }
+
 
