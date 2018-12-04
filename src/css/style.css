@@ -101,11 +101,11 @@ html {
 }
 
 .impression-section {
-  display: flex;
-  height: 43rem;
-  width: 100%;
-  align-items: flex-end;
   position: relative;
+  display: flex;
+  width: 100%;
+  height: 43rem;
+  align-items: flex-end;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -127,56 +127,56 @@ html {
   padding: 0 4rem;
 }
 
-.impression-section__items__text-block {
+.impression-section__text-block {
   display: inline-block;
   width: 49%;
   vertical-align: top;
   padding: 10rem 0;
 }
 
-.impression-section__items__text-block__text-item {
+.impression-section__text-item {
   color: #81868e;
-  filter: none;
   text-transform: uppercase;
+  filter: none;
 }
 
-.impression-section__items__text-block__text-item--title {
-  font-size: 2rem;
+.impression-section__text-item--title {
+  padding-bottom: 2rem;
   color: #ffffff;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   filter: brightness(100%) grayscale(0);
-  padding-bottom: 2rem;
 }
 
-.impression-section__items__text-block__text-item--description {
-  font-size: 1.6rem;
+.impression-section__text-item--description {
   padding: 2rem 0;
+  font-size: 1.6rem;
   text-transform: none;
 }
 
-.impression-section__items__text-block__text-item--author {
+.impression-section__text-item--author {
+  padding: 1rem 0;
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 1rem 0;
 }
 
-.impression-section__items__text-block__text-item--position {
+.impression-section__text-item--position {
   font-size: 1.4rem;
 }
 
-.impression-section__items__text-block__text-item--green {
+.impression-section__text-item--green {
   color: #19bd9a;
 }
 
-.impression-section__items__video-block {
+.impression-section__video-block {
+  position: relative;
+  vertical-align: top;
   display: inline-block;
   width: 50%;
   height: 100%;
-  position: relative;
-  vertical-align: top;
 }
 
-.impression-section__items__video-block__background {
+.impression-section__video-background {
   position: absolute;
   top: -3.8rem;
   width: 100%;
@@ -184,15 +184,15 @@ html {
   height: 33.3rem;
   max-height: 100%;
   max-width: 41rem;
+  text-align: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../img/monitor.png");
-  text-align: center;
 }
 
-.impression-section__items__video-block__video {
-  max-width: 37.5rem;
-  max-height: 23rem;
+.impression-section__video {
   width: 100%;
   height: 100%;
+  max-width: 37.5rem;
+  max-height: 23rem;
 }
