@@ -174,6 +174,29 @@ a.slide_btn {
   background-color: #333b46;
 }
 
+.section-title {
+  width: 463px;
+  max-width: 100%;
+}
+
+.section-title__title {
+  color: #464646;
+  font: 2rem "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.section-title__paragraph {
+  color: #81868e;
+  font: 1.4rem "Open Sans", sans-serif;
+  margin-top: 40px;
+  letter-spacing: 0.1rem;
+}
+
+.section-title__paragraph--light {
+  color: #ffffff;
+}
+
 .portfolio {
   background: #f3f3f3;
   padding: 80px 0 101px;
@@ -187,20 +210,7 @@ a.slide_btn {
 }
 
 .portfolio__title {
-  color: #464646;
-  font: 2rem "Source Sans Pro", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-
-.portfolio__paragraph {
-  width: 463px;
-  max-width: 100%;
   margin: 0 auto;
-  color: #81868e;
-  font: 1.4rem "Open Sans", sans-serif;
-  margin-top: 40px;
-  letter-spacing: 0.1rem;
 }
 
 .portfolio__list {

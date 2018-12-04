@@ -10,20 +10,7 @@
   }
 
   &__title {
-    color: $dark-gray;
-    font: 2rem $source-sans;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-  }
-
-  &__paragraph {
-    width: 463px;
-    max-width: 100%;
     margin: 0 auto;
-    color: $gray;
-    font: 1.4rem $open-sans;
-    margin-top: 40px;
-    letter-spacing: 0.1rem;
   }
 
   &__list {
