@@ -178,7 +178,7 @@ a.slide_btn {
   position: relative;
   display: flex;
   width: 100%;
-  height: 43rem;
+  height: 39.2rem;
   align-items: flex-end;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -186,7 +186,6 @@ a.slide_btn {
 .impression-section__background {
   width: 100%;
   height: 100%;
-  max-height: 39.2rem;
   background-image: url("../img/back.jpg");
   background-position: center;
   filter: grayscale(100%) brightness(20%);
@@ -197,7 +196,6 @@ a.slide_btn {
   left: 0;
   width: 100%;
   height: 100%;
-  max-height: 39.2rem;
   padding: 0 4rem;
 }
 
