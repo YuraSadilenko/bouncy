@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Bouncy</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  
 </head>
 <body>
+  <div class="slider">
+    <div class="slider__viewer">
+      <div class="slider__viewer--group">
+        <div class="slide">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed
+            recusandae maiores qui at tempora nisi aspernatur. Vero maxime,
+            eos placeat laborum dolorem exercitationem, numquam facilis ea,
+            reprehenderit esse incidunt.
+          </p>
+        </div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+      </div>
+      <div class="slide-buttons"></div>
+    </div>
+  </div>
+  <!-- End // .slider -->
   <main>
+    <div class="our-services">
+      <div class="our-services__container">
+        <div class="our-services__services-title section-title">
+          <h2 class="section-title__title">Our services</h2>
+          <p class="section-title__paragraph">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium
+          </p>
+        </div>
+        <div class="our-services__content">
+          <input type="radio" name="switcher" id="settings" class="our-services__hidden our-services__hidden--first" checked="checked">
+            <input type="radio" name="switcher" id="roller" value="roller" class="our-services__hidden our-services__hidden--second">
+            <input type="radio" name="switcher" id="game" value="game" class="our-services__hidden our-services__hidden--third">
+            <input type="radio" name="switcher" id="connector" value="connector" class="our-services__hidden our-services__hidden--fourth">
+          <div class="our-services__column">                 
+            <div class="our-services__switches">
+              <label for="settings" class="our-services__switcher our-services__switcher--first icon icon--settings"></label>              
+              <label for="roller" class="our-services__switcher our-services__switcher--second icon icon--roller"></label>              
+              <label for="game" class="our-services__switcher our-services__switcher--third icon icon--gamepad"></label>              
+              <label for="connector" class="our-services__switcher our-services__switcher--fourth icon icon--socket"></label>                        
+            </div>
+            <div class="our-services__column-text ">
+              <h3 class="our-services__title">Graphic Design</h3>
+              <p class="our-services__paragraph">At vero eos et accusamus et <span class="our-services__paragraph our-services__paragraph--green">iusto</span> odio dignissimos <span class="our-services__paragraph our-services__paragraph--gray">ducimus</span> qui blanditiis praesentium voluptatum deleniti</p>
+              <p class="our-services__paragraph">quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <span class="our-services__paragraph our-services__paragraph--green">similique sunt</span> in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+            </div>
+          </div>
+          <div class="our-services__vector-container">
+            <div class="our-services__vector-box">
+              <svg height="121" width="121" viewBox="0 0 129 129" class="our-services__vector">
+                <circle cx="61" cy="61" r="56" class="our-services__small-circle"/>
+                <circle cx="61" cy="61" r="56" class="our-services__circle our-services__circle--first"/>
+                <text x="45" y="65" class="our-services__numb">80<tspan class="our-services__numb our-services__numb--percentage">%</tspan></text>
+              </svg>
+              <h4 class="our-services__branding">Branding</h4>   
+            </div>
+            <div class="our-services__vector-box">
+              <svg height="121" width="121" viewBox="0 0 129 129" class="our-services__vector">
+                <circle cx="61" cy="61" r="56" class="our-services__small-circle"/>
+                <circle cx="61" cy="61" r="56" class="our-services__circle our-services__circle--second"/>
+                <text x="45" y="65" class="our-services__numb">75<tspan class="our-services__numb our-services__numb--percentage">%</tspan></text>
+              </svg>
+              <h4 class="our-services__branding">Web Design</h4>   
+            </div>
+            <div class="our-services__vector-box">
+              <svg height="121" width="121" viewBox="0 0 129 129" class="our-services__vector">
+                <circle cx="61" cy="61" r="56" class="our-services__small-circle"/>
+                <circle cx="61" cy="61" r="56" class="our-services__circle our-services__circle--third"/>
+                <text x="45" y="65" class="our-services__numb">60<tspan class="our-services__numb our-services__numb--percentage">%</tspan></text>
+              </svg>
+              <h4 class="our-services__branding">UI/UX</h4>   
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End // .our-services -->
     <div class="portfolio">
       <div class="portfolio__container">
         <div class="section-title portfolio__title">
@@ -250,28 +325,8 @@
         </div>
       </div>
     </div>
+    <!-- End // .portfolio -->
   </main>
-  <div class="slider">
-    <div class="slider__viewer">
-      <div class="slider__viewer--group">
-        <div class="slide">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed recusandae maiores qui at tempora nisi aspernatur. Vero maxime, eos placeat laborum dolorem exercitationem, numquam facilis ea, reprehenderit esse incidunt.</p>
-        </div>
-        <div class="slide">
-        </div>
-        <div class="slide">
-        </div>
-      </div>
-      <div class="slide-buttons">
-      </div>
-    </div>
-    
-  </div><!-- End // .slider -->
-  
-  
-
   <script src="scripts/carousel.js"></script>
 </body>
 </html>
-
-
