@@ -8,6 +8,7 @@
 
 html {
   font-size: 10px;
+  min-width: 360px;
 }
 
 @font-face {
@@ -272,6 +273,18 @@ a.slide_btn {
   height: 100%;
   max-width: 37.5rem;
   max-height: 23rem;
+}
+
+@media screen and (max-width: 860px) {
+  .impression-section__video {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .impression-section__text-item {
+    font-size: 1.3rem;
+  }
 }
 
 .section-title {
@@ -933,4 +946,10 @@ a.slide_btn {
   .our-price__premium:first-child {
     margin-top: 0px;
   }
+}
+
+.form {
+  background-color: #ffffff;
+  width: 100%;
+  height: 55.3rem;
 }
