@@ -136,12 +136,12 @@ a.slide_btn {
 
 .btn {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 2rem;
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 3.2rem;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 2rem;
   background-size: 0 100%;
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -172,6 +172,106 @@ a.slide_btn {
 .btn--dark:hover {
   color: #ffffff;
   background-color: #333b46;
+}
+
+.impression-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 39.2rem;
+  align-items: flex-end;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.impression-section__background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/back.jpg");
+  background-position: center;
+  filter: grayscale(100%) brightness(20%);
+}
+
+.impression-section__items {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 4rem;
+}
+
+.impression-section__text-block {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  padding: 10rem 0;
+}
+
+.impression-section__text-item {
+  color: #81868e;
+  text-transform: uppercase;
+  filter: none;
+}
+
+.impression-section__text-item--title {
+  padding-bottom: 2rem;
+  color: #ffffff;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  filter: brightness(100%) grayscale(0);
+}
+
+.impression-section__text-item--description {
+  padding: 2rem 0;
+  font-size: 1.6rem;
+  text-transform: none;
+  hyphens: auto;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.impression-section__text-item--author {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.impression-section__text-item--position {
+  font-size: 1.4rem;
+}
+
+.impression-section__text-item--green {
+  color: #19bd9a;
+}
+
+.impression-section__video-block {
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+
+.impression-section__video-background {
+  position: absolute;
+  top: -3.8rem;
+  width: 100%;
+  right: 0;
+  height: 33.3rem;
+  max-height: 100%;
+  max-width: 41rem;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/monitor.png");
+}
+
+.impression-section__video {
+  width: 100%;
+  height: 100%;
+  max-width: 37.5rem;
+  max-height: 23rem;
 }
 
 .section-title {
