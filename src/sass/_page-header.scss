@@ -1,0 +1,11 @@
+.page-header {
+  padding: 40px 100px;
+  background-image: url("../img/header.jpg");
+
+  &__logo {
+    font-family: $big-john;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
