@@ -100,4 +100,14 @@
   }
 }
 
+@media screen and (max-width: 860px) {
+  .impression-section__video {
+    opacity: 0;
+  }
+}
 
+@media screen and (max-width: 470px) {
+  .impression-section__text-item {
+    font-size: 1.3rem;
+  }
+}
