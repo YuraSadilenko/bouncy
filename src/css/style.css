@@ -177,6 +177,7 @@ a.slide_btn {
 .section-title {
   width: 463px;
   max-width: 100%;
+  text-align: center;
 }
 
 .section-title__title {
@@ -819,9 +820,6 @@ a.slide_btn {
 }
 
 @media screen and (max-width: 675px) {
-  .our-price {
-    width: 90%;
-  }
   .our-price__price-list {
     margin-top: 20px;
     flex-direction: column;
