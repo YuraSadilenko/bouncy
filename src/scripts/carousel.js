@@ -27,15 +27,15 @@ $('.slider').each(function() {
     }
     
     $slides.eq(newIndex).css({
-      display: 'block',
+      // display: 'flex',
       left: slideLeft
     });
     $group.animate({
       left: animateLeft
     }, function() {
-      $slides.eq(currentIndex).css({
-        display: 'none'
-      });
+      // $slides.eq(currentIndex).css({
+      //   // display: 'none'
+      // });
       $slides.eq(newIndex).css({
         left: 0
       });
