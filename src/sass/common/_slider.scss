@@ -66,44 +66,47 @@
 // 	background-color: $green-color;
 // 	cursor: pointer;
 // }
+.slider {
+  width: 80%;
 
-.slider-radio {
-  display: none;
+  &__radio {
+    display: none;
 
-  &--1 {
-    &:checked ~ .slider-box--one {
-      display: block;
+    &--1 {
+      &:checked ~ .slider-box--one {
+        display: block;
+      }
+
+      &:checked ~ .slider__labels .slider__labels-item--first::after {
+        background: $green-color;
+      }
     }
 
-    &:checked ~ .slider__labels .slider__labels-item--first::after {
-      background: gray;
-    }
-  }
+    &--2 {
+      &:checked ~ .slider-box--two {
+        display: block;
+      }
 
-  &--2 {
-    &:checked ~ .slider-box--two {
-      display: block;
-    }
-
-    &:checked ~ .slider__labels .slider__labels-item--second::after {
-      background: gray;
-    }
-  }
-
-  &--3 {
-    &:checked ~ .slider-box--three {
-      display: block;
+      &:checked ~ .slider__labels .slider__labels-item--second::after {
+        background-color: $green-color;
+      }
     }
 
-    &:checked ~ .slider__labels .slider__labels-item--third::after {
-      background: gray;
+    &--3 {
+      &:checked ~ .slider-box--three {
+        display: block;
+      }
+
+      &:checked ~ .slider__labels .slider__labels-item--third::after {
+        background: $green-color;
+      }
     }
   }
 }
 
 .slider__labels {
   position: absolute;
-  bottom: 5rem;
+  bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -119,10 +122,10 @@
   &-item::after {
     content: "";
     display: inline-block;
-    margin: 0 2rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 1px solid gray;
+    margin: 0 1rem;
+    width: .8rem;
+    height: .8rem;
+    border: 1px solid $green-color;
     border-radius: 50%;
     cursor: pointer;
 
@@ -134,6 +137,7 @@
 }
 
 .slider-box {
-	display: none;
+  display: none;
+  height: 50rem;
 }
 
