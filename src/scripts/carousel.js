@@ -19,11 +19,11 @@ $('.slider').each(function() {
     bulletArray[newIndex].addClass('active');
     
     if (newIndex > currentIndex) {
-      slideLeft = '100%';
-      animateLeft = '-100%';
+      slideLeft = '200%';
+      animateLeft = '-200%';
     } else {
-      slideLeft = '-100%';
-      animateLeft = '100%';
+      slideLeft = '-200%';
+      animateLeft = '200%';
     }
     
     $slides.eq(newIndex).css({
@@ -54,7 +54,7 @@ $('.slider').each(function() {
       } else {
         move(0);
       }
-    }, 4000);
+    }, 10000);
   }
   
   // $('.next_btn').on('click', function() {

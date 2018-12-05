@@ -109,12 +109,12 @@ html {
 
 .slider {
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
 }
 
 .slider__viewer {
-  padding: 6rem 10rem;
-  height: 640px;
+  padding: 6rem 0;
+  height: 550px;
   overflow: hidden;
   position: relative;
 }
@@ -149,7 +149,7 @@ a.slide_btn {
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  border: 2px solid #19bd9a;
+  border: 1px solid #19bd9a;
   border-radius: 50%;
   margin: 0 1rem;
   -webkit-transition: all 0.4s ease-in-out;
@@ -167,6 +167,7 @@ a.slide_btn {
 .team {
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-weight: 300;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -187,13 +188,13 @@ a.slide_btn {
 }
 
 .team__img-box {
-  width: 30%;
+  width: auto;
   height: 85%;
   overflow: hidden;
 }
 
 .team__photo {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
@@ -202,27 +203,35 @@ a.slide_btn {
   text-align: right;
 }
 
+.team__rate--box {
+  width: 30%;
+}
+
 .team__rate--name {
   font-size: 2.5rem;
   font-weight: 100;
   text-transform: capitalize;
+  margin-bottom: 1rem;
 }
 
 .team__rate--position {
   font-size: 1.5rem;
+  font-style: italic;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
 .team__rate--description {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
+  text-align: right;
 }
 
 .team__rate--progress {
   font-size: 1.5rem;
   text-align: left;
   text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 .team__rate--skills {
@@ -231,9 +240,24 @@ a.slide_btn {
 
 .progress {
   margin-bottom: 1rem;
-  font-size: .3rem;
+  font-size: .4rem;
   width: 100%;
-  background-color: rgba(0, 204, 153, 0.8);
+}
+
+.progress[value]::-webkit-progress-bar, .progress[value]::-moz-progress-bar {
+  background-color: #81868e;
+  border-radius: 2px;
+}
+
+.progress[value]::-webkit-progress-value, .progress[value]::-moz-progress-value {
+  background-color: #19bd9a;
+  border-radius: 2px;
+}
+
+.progress__stat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .section-title {
