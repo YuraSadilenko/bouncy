@@ -492,7 +492,6 @@
             <label class="form__label" for="name">Your name</label>
           </div>
 
-
           <div class="form__item">
             <input class="form__input" type="text" id="email" name="email" required>
             <label class="form__label" for="email">Your email</label>
@@ -504,12 +503,13 @@
           </div>
         </div>
 
-        <div class="form__textarea">
-          <textarea class="form__input" id="message" name="message" required></textarea>
-          <label class="form__label" for="message">Message</label>
+        <div class="form__row">
+            <textarea class="form__textarea" id="message" name="message" required></textarea>
         </div>
 
-        <button type="submit">Submit now</button>
+        <div class="form__row">
+          <button class="form__btn our-price__premium-head" type="submit">Submit now</button>
+        </div>
 
         <input name="surname" id="surname" type="text" value="surname" hidden/>
       </form>
