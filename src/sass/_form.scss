@@ -9,6 +9,7 @@
   &__row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 3rem;
   }
 
@@ -40,7 +41,7 @@
 
     &:valid + .form__label {
       padding: 0;
-      transform: translateY(-2.3em) scale(.75, .75);
+      transform: translateY(-2.3rem) scale(.75, .75);
       opacity: .8;
     }
   }
@@ -64,3 +65,9 @@
   }
 }
 
+@media screen and (max-width: 1125px) {
+  .form__item {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+}

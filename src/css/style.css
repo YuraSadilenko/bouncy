@@ -960,6 +960,7 @@ a.slide_btn {
 .form__row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 3rem;
 }
 
@@ -992,7 +993,7 @@ a.slide_btn {
 
 .form__input:valid + .form__label {
   padding: 0;
-  transform: translateY(-2.3em) scale(0.75, 0.75);
+  transform: translateY(-2.3rem) scale(0.75, 0.75);
   opacity: .8;
 }
 
@@ -1012,4 +1013,11 @@ a.slide_btn {
   border: none;
   font-weight: normal;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1125px) {
+  .form__item {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
 }
