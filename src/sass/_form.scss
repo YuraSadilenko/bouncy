@@ -2,4 +2,45 @@
   background-color: $btn-color-white;
   width: 100%;
   height: 55.3rem;
+  padding: 8rem 21.5rem;
+  font: 1.4rem $open-sans;
+  color: $gray;
+
+  &_item {
+    position: relative;
+    display: inline-block;
+    margin-right: 4rem;
+  }
+
+  &_textarea {
+    display: block;
+  }
+
+  &_input {
+    display: inline-block;
+    font-size: inherit;
+    border: 1px solid $light-gray;
+    height: 4rem;
+    outline: 0;
+    color: $gray;
+    padding: 2rem;
+
+    &:valid + .form_label {
+      transform: translateY(-2.3em) scale(.75, .75);
+      opacity: .8;
+    }
+  }
+
+  &_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    padding-left: 2rem;
+    //transform: translateY(-1.2em);
+    transform-origin: left center;
+    opacity: .3;
+    transition: transform .2s, opacity .2s;
+    pointer-events: none;
+  }
 }
+

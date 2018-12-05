@@ -425,15 +425,30 @@
     <!-- End // .our-price -->
     <!-- Start // .form -->
     <div class="form">
-      <form>
-        <label for="name">Your name</label>
-        <input type="text" id="name">
-        <label for="email">Your email</label>
-        <input type="email" id="email">
-        <label for="subject">Your subject</label>
-        <input type="text" id="subject">
-        <label for="message">Message</label>
-        <textarea id="message"></textarea>
+      <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+        <div class="form_item">
+          <input class="form_input" type="text" id="name" name="name" required>
+          <label class="form_label" for="name">Your name</label>
+        </div>
+
+        <div class="form_item">
+          <input class="form_input" type="text" id="email" name="email" required>
+          <label class="form_label" for="email">Your email</label>
+        </div>
+
+        <div class="form_item">
+          <input class="form_input" type="text" id="subject" name="subject" required>
+          <label class="form_label" for="subject">Your subject</label>
+        </div>
+
+        <div class="form_textarea">
+          <textarea class="form_input" id="message" name="message" required></textarea>
+          <label class="form_label" for="message">Message</label>
+        </div>
+
+        <button type="submit">Submit now</button>
+
+        <input name="surname" id="surname" type="text" value="surname" hidden/>
       </form>
     </div>
     <!-- End // .form -->
