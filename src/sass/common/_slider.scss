@@ -2,6 +2,13 @@
   width: 80%;
   position: relative;
 
+  @media (min-width:300px) and (max-width: 767px) {
+    .slider {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   &__radio {
     display: none;
 
@@ -39,18 +46,25 @@
 
 .slider__labels {
   position: absolute;
-  bottom: 15%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
 
-  // @include respond(tab-land) {
-  //   bottom: 5rem;
-  // }
+  @media (min-width:768px) and (max-width: 1199px) {
+    & {
+      bottom: 8%;
+    }
+  }
 
-  // @include respond(phone) {
-  //   bottom: 7rem;
-  // }
+  @media (min-width:1200px) and (max-width: 1800) {
+    & {
+      bottom: 10%;
+    }
+  }
+
+
+  
 
   &-item::after {
     content: "";
@@ -62,15 +76,29 @@
     border-radius: 50%;
     cursor: pointer;
 
-    // @include respond(tab-land) {
-    //   width: 1.3rem;
-    //   height: 1.3rem;
-    // }
+    @media (min-width:768px) and (max-width: 1199px) {
+      & {
+        width: 1rem;
+        height: 1rem;
+    
+      }
+    }
+  
+    @media (min-width:1200px) and (max-width: 1800) {
+      & {
+        width: 2.3rem;
+        height: 2.3rem;
+        border: 2px solid $green-color;
+    
+      }
+    }
+  
   }
 }
 
 .slider-box {
   display: none;
   height: 50rem;
+
 }
 

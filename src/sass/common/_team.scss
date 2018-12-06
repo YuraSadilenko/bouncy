@@ -6,6 +6,7 @@
   font-family: $source-sans;
   padding: 6rem 0;
 
+
   &--box {
     text-align: center;
   }
@@ -21,6 +22,20 @@
     justify-content: space-between;
     height: 50rem;
     padding: 7rem 0;
+
+    @media (min-width:768px) and (max-width: 1199px) {
+      & {
+        padding: 5rem 0;
+      }
+    }
+
+    @media (min-width:300px) and (max-width: 767px) {
+      & {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+      }
+    }
   }
 
   &__img-box {
@@ -28,6 +43,19 @@
     height: 100%;
     overflow: hidden;
 
+    @media (min-width:768px) and (max-width: 1199px) {
+      & {
+        max-width: 45%;
+        height: 90%;
+      }
+    }
+
+
+    @media (min-width:300px) and (max-width: 767px) {
+      & {
+        display: none;
+      }
+    }
   }
   &__photo {
     width: 100% auto;
@@ -41,6 +69,20 @@
     &--box {
       width: 30%;
 
+      @media (min-width:768px) and (max-width: 1199px) {
+        & {
+          width: 45%;
+        }
+      }
+  
+
+      @media (min-width:300px) and (max-width: 767px) {
+        & {
+          width: 90%;
+          margin: auto;
+        }
+      }
+
     }
 
     &--name {
@@ -48,6 +90,12 @@
       font-weight: 100;
       text-transform: capitalize;
       margin-bottom: 1rem;
+
+      @media (min-width:300px) and (max-width: 767px) {
+        & {
+          text-align: center;
+        }
+      }
     }
 
     &--position {
@@ -55,12 +103,26 @@
       font-style: italic;
       text-transform: uppercase;
       margin-bottom: 2rem;
+
+      @media (min-width:300px) and (max-width: 767px) {
+        & {
+          text-align: center;
+        }
+      }
+
     }
 
     &--description {
       font-size: 1.4rem;
       margin-bottom: 2rem;
       text-align: right;
+
+      @media (min-width:300px) and (max-width: 767px) {
+        & {
+          text-align: justify;
+        }
+      }
+
     }
 
     &--progress {
