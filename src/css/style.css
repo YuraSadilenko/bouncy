@@ -376,6 +376,26 @@ a.slide_btn {
   justify-content: space-between;
 }
 
+.green-block {
+  background: url(img/t-shirt.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.green-block__mask {
+  background: rgba(0, 204, 153, 0.8);
+  padding: 58px 0 57px;
+}
+
+.green-block__paragraph {
+  font: 2rem "Open Sans", sans-serif;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.green-block__paragraph--select {
+  font-weight: bold;
+}
+
 .section-title {
   width: 463px;
   max-width: 100%;
@@ -843,23 +863,6 @@ a.slide_btn {
 
 .portfolio__bottom-block {
   margin-top: 40px;
-  background: url(img/t-shirt.jpg) center no-repeat;
-  background-size: cover;
-}
-
-.portfolio__bottom-block-mask {
-  background: rgba(0, 204, 153, 0.8);
-  padding: 58px 0 57px;
-}
-
-.portfolio__bottom-block-paragraph {
-  font: 2rem "Open Sans", sans-serif;
-  color: #ffffff;
-  letter-spacing: 2px;
-}
-
-.portfolio__bottom-block-paragraph--select {
-  font-weight: bold;
 }
 
 .portfolio__bottom-block-btn {
