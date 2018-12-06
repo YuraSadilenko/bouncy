@@ -19,15 +19,15 @@ $('.slider').each(function() {
     bulletArray[newIndex].addClass('active');
     
     if (newIndex > currentIndex) {
-      slideLeft = '100%';
-      animateLeft = '-100%';
+      slideLeft = '200%';
+      animateLeft = '-200%';
     } else {
-      slideLeft = '-100%';
-      animateLeft = '100%';
+      slideLeft = '-200%';
+      animateLeft = '200%';
     }
     
     $slides.eq(newIndex).css({
-      display: 'block',
+      display: 'flex',
       left: slideLeft
     });
     $group.animate({
@@ -54,24 +54,24 @@ $('.slider').each(function() {
       } else {
         move(0);
       }
-    }, 4000);
+    }, 10000);
   }
   
-  $('.next_btn').on('click', function() {
-    if (currentIndex < ($slides.length - 1)) {
-      move(currentIndex + 1);
-    } else {
-      move(0);
-    }
-  });
+  // $('.next_btn').on('click', function() {
+  //   if (currentIndex < ($slides.length - 1)) {
+  //     move(currentIndex + 1);
+  //   } else {
+  //     move(0);
+  //   }
+  // });
   
-  $('.previous_btn').on('click', function() {
-    if (currentIndex !== 0) {
-      move(currentIndex - 1);
-    } else {
-      move(3);
-    }
-  });
+  // $('.previous_btn').on('click', function() {
+  //   if (currentIndex !== 0) {
+  //     move(currentIndex - 1);
+  //   } else {
+  //     move(3);
+  //   }
+  // });
   
   $.each($slides, function(index) {
     var $button = $('<a class="slide_btn"></a>');

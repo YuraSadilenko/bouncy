@@ -1,402 +1,653 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <title>Bouncy</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="slider">
-    <div class="slider__viewer">
-      <div class="slider__viewer--group">
-        <div class="slide">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed
-            recusandae maiores qui at tempora nisi aspernatur. Vero maxime,
-            eos placeat laborum dolorem exercitationem, numquam facilis ea,
-            reprehenderit esse incidunt.
-          </p>
-        </div>
-        <div class="slide"></div>
-        <div class="slide"></div>
+<header class="page-header">
+  <div class="page-header__top">
+    <span class="page-header__logo"><a class="page-header__home-link" href="#">bouncy</a></span>
+    <nav class="page-header__main-nav">
+      <ul class="page-header__list">
+        <li class="page-header__item"><a href="#" class="page-header__link">Hello</a></li>
+        <li class="page-header__item"><a href="#" class="page-header__link">About</a></li>
+        <li class="page-header__item"><a href="#" class="page-header__link">Services</a></li>
+        <li class="page-header__item"><a href="#" class="page-header__link">Portfolio</a></li>
+        <li class="page-header__item"><a href="#" class="page-header__link">Team</a></li>
+        <li class="page-header__item"><a href="#" class="page-header__link">Blog</a></li>
+        <li class="page-header__item"><a href="#" class="page-header__link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="page-header__text-block">
+    <h1 class="page-header__title">we are code cafe</h1>
+    <p class="page-header__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+      praesentium</p>
+  </div>
+  <a href="#" class="page-header__slide-bottom"></a>
+</header>
+<main>
+
+  <!-- Start // .our-services -->
+  <div class="our-services">
+    <div class="our-services__container">
+      <div class="our-services__services-title section-title">
+        <h2 class="section-title__title">Our services</h2>
+        <p class="section-title__paragraph">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium
+        </p>
       </div>
-      <div class="slide-buttons"></div>
+      <div class="our-services__content">
+        <input type="radio" name="switcher" id="settings" class="our-services__hidden our-services__hidden--first"
+               checked="checked">
+        <input type="radio" name="switcher" id="roller" value="roller"
+               class="our-services__hidden our-services__hidden--second">
+        <input type="radio" name="switcher" id="game" value="game"
+               class="our-services__hidden our-services__hidden--third">
+        <input type="radio" name="switcher" id="connector" value="connector"
+               class="our-services__hidden our-services__hidden--fourth">
+        <div class="our-services__column">
+          <div class="our-services__switches">
+            <label for="settings"
+                   class="our-services__switcher our-services__switcher--first icon icon--settings"></label>
+            <label for="roller"
+                   class="our-services__switcher our-services__switcher--second icon icon--roller"></label>
+            <label for="game" class="our-services__switcher our-services__switcher--third icon icon--gamepad"></label>
+            <label for="connector"
+                   class="our-services__switcher our-services__switcher--fourth icon icon--socket"></label>
+          </div>
+          <div class="our-services__column-text ">
+            <h3 class="our-services__title">Graphic Design</h3>
+            <p class="our-services__paragraph">At vero eos et accusamus et <span
+                    class="our-services__paragraph our-services__paragraph--green">iusto</span> odio dignissimos <span
+                    class="our-services__paragraph our-services__paragraph--gray">ducimus</span> qui blanditiis
+              praesentium voluptatum deleniti</p>
+            <p class="our-services__paragraph">quos dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, <span class="our-services__paragraph our-services__paragraph--green">similique sunt</span> in
+              culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+          </div>
+        </div>
+        <div class="our-services__vector-container">
+          <div class="our-services__vector-box">
+            <svg height="121" width="121" viewBox="0 0 129 129" class="our-services__vector">
+              <circle cx="61" cy="61" r="56" class="our-services__small-circle"/>
+              <circle cx="61" cy="61" r="56" class="our-services__circle our-services__circle--first"/>
+              <text x="45" y="65" class="our-services__numb">80
+                <tspan class="our-services__numb our-services__numb--percentage">%</tspan>
+              </text>
+            </svg>
+            <h4 class="our-services__branding">Branding</h4>
+          </div>
+          <div class="our-services__vector-box">
+            <svg height="121" width="121" viewBox="0 0 129 129" class="our-services__vector">
+              <circle cx="61" cy="61" r="56" class="our-services__small-circle"/>
+              <circle cx="61" cy="61" r="56" class="our-services__circle our-services__circle--second"/>
+              <text x="45" y="65" class="our-services__numb">75
+                <tspan class="our-services__numb our-services__numb--percentage">%</tspan>
+              </text>
+            </svg>
+            <h4 class="our-services__branding">Web Design</h4>
+          </div>
+          <div class="our-services__vector-box">
+            <svg height="121" width="121" viewBox="0 0 129 129" class="our-services__vector">
+              <circle cx="61" cy="61" r="56" class="our-services__small-circle"/>
+              <circle cx="61" cy="61" r="56" class="our-services__circle our-services__circle--third"/>
+              <text x="45" y="65" class="our-services__numb">60
+                <tspan class="our-services__numb our-services__numb--percentage">%</tspan>
+              </text>
+            </svg>
+            <h4 class="our-services__branding">UI/UX</h4>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- End // .slider -->
-  <main>
-    <div class="our-services">
-      <div class="our-services__container">
-        <div class="our-services__services-title section-title">
-          <h2 class="section-title__title">Our services</h2>
-          <p class="section-title__paragraph">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium
-          </p>
+  <!-- End // .our-services -->
+
+  <!-- Start // .impression-section -->
+  <div class="impression-section">
+    <div class="impression-section__background"></div>
+    <div class="impression-section__items">
+      <div class="impression-section__text-block">
+        <div class="impression-section__text-item impression-section__text-item--title">
+          Impressed ?
         </div>
-        <div class="our-services__content">
-          <input type="radio" name="switcher" id="settings" class="our-services__hidden our-services__hidden--first" checked="checked">
-            <input type="radio" name="switcher" id="roller" value="roller" class="our-services__hidden our-services__hidden--second">
-            <input type="radio" name="switcher" id="game" value="game" class="our-services__hidden our-services__hidden--third">
-            <input type="radio" name="switcher" id="connector" value="connector" class="our-services__hidden our-services__hidden--fourth">
-          <div class="our-services__column">                 
-            <div class="our-services__switches">
-              <label for="settings" class="our-services__switcher our-services__switcher--first icon icon--settings"></label>              
-              <label for="roller" class="our-services__switcher our-services__switcher--second icon icon--roller"></label>              
-              <label for="game" class="our-services__switcher our-services__switcher--third icon icon--gamepad"></label>              
-              <label for="connector" class="our-services__switcher our-services__switcher--fourth icon icon--socket"></label>                        
+        <div class="impression-section__text-item impression-section__text-item--description">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+          deleniti atque corrupti quos dolores et quas molestias
+        </div>
+        <div class="impression-section__text-item impression-section__text-item--author">
+          - Abdullah Noman
+        </div>
+        <div class="impression-section__text-item impression-section__text-item--position">
+          Creatice Director, <span
+                class="impression-section__text-item impression-section__text-item--green">Code Cafe</span>
+        </div>
+      </div>
+      <div class="impression-section__video-block">
+        <div class="impression-section__video-background">
+
+          <iframe class="impression-section__video" src="https://www.youtube.com/embed/1VYhagakiE8"
+                  frameborder="0" allow="autoplay;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End // .impression-section -->
+
+  <!-- Start // .portfolio -->
+  <div class="portfolio">
+    <div class="portfolio__container">
+      <div class="section-title portfolio__title">
+        <h2 class="section-title__title">The portfolio</h2>
+        <p class="section-title__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium</p>
+      </div>
+      <ul class="portfolio__list">
+        <li class="portfolio__item"><a href="#" class="portfolio__link">All Works</a></li>
+        <li class="portfolio__item"><a href="#" class="portfolio__link">Print</a></li>
+        <li class="portfolio__item"><a href="#" class="portfolio__link">Indentity</a></li>
+        <li class="portfolio__item"><a href="#" class="portfolio__link">Branding</a></li>
+        <li class="portfolio__item"><a href="#" class="portfolio__link">Web</a></li>
+        <li class="portfolio__item"><a href="#" class="portfolio__link">HTML</a></li>
+        <li class="portfolio__item"><a href="#" class="portfolio__link">Wordpress</a></li>
+      </ul>
+      <div class="portfolio__gallery">
+        <div class="portfolio__column-container">
+          <div class="portfolio__column">
+            <div class="portfolio__picture-box">
+              <img src="img/bag.jpg" alt="bag" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="our-services__column-text ">
-              <h3 class="our-services__title">Graphic Design</h3>
-              <p class="our-services__paragraph">At vero eos et accusamus et <span class="our-services__paragraph our-services__paragraph--green">iusto</span> odio dignissimos <span class="our-services__paragraph our-services__paragraph--gray">ducimus</span> qui blanditiis praesentium voluptatum deleniti</p>
-              <p class="our-services__paragraph">quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <span class="our-services__paragraph our-services__paragraph--green">similique sunt</span> in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+            <div class="portfolio__picture-box">
+              <img src="img/table.jpg" alt="table" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__picture-box">
+              <img src="img/beer.jpg" alt="some beer" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="our-services__vector-container">
-            <div class="our-services__vector-box">
-              <svg height="121" width="121" viewBox="0 0 129 129" class="our-services__vector">
-                <circle cx="61" cy="61" r="56" class="our-services__small-circle"/>
-                <circle cx="61" cy="61" r="56" class="our-services__circle our-services__circle--first"/>
-                <text x="45" y="65" class="our-services__numb">80<tspan class="our-services__numb our-services__numb--percentage">%</tspan></text>
-              </svg>
-              <h4 class="our-services__branding">Branding</h4>   
+          <div class="portfolio__column">
+            <div class="portfolio__picture-box">
+              <img src="img/red-book.jpg" alt="cool book" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="our-services__vector-box">
-              <svg height="121" width="121" viewBox="0 0 129 129" class="our-services__vector">
-                <circle cx="61" cy="61" r="56" class="our-services__small-circle"/>
-                <circle cx="61" cy="61" r="56" class="our-services__circle our-services__circle--second"/>
-                <text x="45" y="65" class="our-services__numb">75<tspan class="our-services__numb our-services__numb--percentage">%</tspan></text>
-              </svg>
-              <h4 class="our-services__branding">Web Design</h4>   
+            <div class="portfolio__picture-box">
+              <img src="img/bottles.jpg" alt="bottles" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="our-services__vector-box">
-              <svg height="121" width="121" viewBox="0 0 129 129" class="our-services__vector">
-                <circle cx="61" cy="61" r="56" class="our-services__small-circle"/>
-                <circle cx="61" cy="61" r="56" class="our-services__circle our-services__circle--third"/>
-                <text x="45" y="65" class="our-services__numb">60<tspan class="our-services__numb our-services__numb--percentage">%</tspan></text>
-              </svg>
-              <h4 class="our-services__branding">UI/UX</h4>   
-            </div> 
+            <div class="portfolio__picture-box">
+              <img src="img/green-book.jpg" alt="pees" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__column-container">
+          <div class="portfolio__column">
+            <div class="portfolio__picture-box">
+              <img src="img/book.jpg" alt="book" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__picture-box">
+              <img src="img/table-part.jpg" alt="other table" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__picture-box">
+              <img src="img/seat.jpg" alt="seat" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__column">
+            <div class="portfolio__picture-box">
+              <img src="img/garbeo.jpg" alt="garbeo" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__picture-box">
+              <img src="img/bag-2.jpg" alt="bag" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio__picture-box">
+              <img src="img/ipad-2.jpg" alt="ipod" class="portfolio__picture">
+              <div class="portfolio__gallery-content">
+                <div class="portfolio__gallery-central-container">
+                  <h3 class="portfolio__gallery-title">Title here</h3>
+                  <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus
+                    qui blanditiis praesentium</p>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
+                    </svg>
+                  </a>
+                  <a href="#" class="portfolio__gallery-link">
+                    <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24">
+                      <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__bottom-block">
+        <div class="portfolio__bottom-block-mask">
+          <p class="portfolio__bottom-block-paragraph">At vero eos et <span
+                  class="portfolio__bottom-block-paragraph portfolio__bottom-block-paragraph--select">accusamuset</span>
+            iusto odio <span class="portfolio__bottom-block-paragraph portfolio__bottom-block-paragraph--select">dignissimos</span>
+            ducimus qui blanditiis </p>
+          <a href="#" class="portfolio__bottom-block-btn btn btn--light">Start Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End // .portfolio -->
+
+  <!-- Start // .team -->
+  <section class="team">
+    <div class="section-title">
+      <h3 class="section-title__title">team</h3>
+      <p class="section-title__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Ratione enim corporis culpa eveniet eum! Eos?
+      </p>
+    </div>
+    <div class="slider">
+      <div class="slider__viewer">
+        <div class="slider__viewer--group">
+          <div class="slide team__slide">
+            <div class="team__img-box">
+              <img class="team__photo" src="./img/team-beard.jpg" alt="first person of rate">
+            </div>
+            <div class="team__rate team__rate--box">
+              <h3 class="team__rate team__rate--name">Abdulah Amagaramph</h3>
+              <p class="team__rate--position">cooperatice director of globallogic team</p>
+              <p class="team__rate--description">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="team__rate team__rate--progress">
+                <div class="progress__stat">
+                  <p class="team__rate team__rate--skills">branding</p>
+                  <span class="progress__value">80%</span>
+                </div>
+                <progress class="progress" max="100" value="80"></progress>
+              </div>
+              <div class="team__rate team__rate--progress">
+                <div class="progress__stat">
+                  <p class="team__rate team__rate--skills">web design</p>
+                  <span class="progress__value">100%</span>
+                </div>
+                <progress class="progress" max="100" value="100"></progress>
+              </div>
+              <div class="team__rate team__rate--progress">
+                <div class="progress__stat">
+                  <p class="team__rate team__rate--skills">UI</p>
+                  <span class="progress__value">75%</span>
+                </div>
+                <progress class="progress" max="100" value="75"></progress>
+              </div>
+            </div>
+          </div>
+          <div class="slide team__slide">
+            <div class="team__img-box">
+              <img class="team__photo" src="./img/team-guy.jpg" alt="first person of rate">
+            </div>
+            <div class="team__rate team__rate--box">
+              <h3 class="team__rate team__rate--name">Nomad Lefcovich</h3>
+              <p class="team__rate team__rate--position">FrontEnd Developer Luxoft team</p>
+              <p class="team__rate team__rate--description">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Lorem ipsum dolor sit amet consectetur.
+              </p>
+              <div class="team__rate team__rate--progress">
+                <div class="progress__stat">
+                  <p class="team__rate team__rate--skills">branding</p>
+                  <span class="progress__value">90%</span>
+                </div>
+                <progress class="progress" max="100" value="90"></progress>
+              </div>
+              <div class="team__rate team__rate--progress">
+                <div class="progress__stat">
+                  <p class="team__rate team__rate--skills">web design</p>
+                  <span class="progress__value">60%</span>
+                </div>
+                <progress class="progress" max="100" value="60"></progress>
+              </div>
+              <div class="team__rate team__rate--progress">
+                <div class="progress__stat">
+                  <p class="team__rate team__rate--skills">UI</p>
+                  <span class="progress__value">50%</span>
+                </div>
+                <progress class="progress" max="100" value="50"></progress>
+              </div>
+            </div>
+          </div>
+          <div class="slide team__slide">
+            <div class="team__img-box">
+              <img class="team__photo" src="./img/team-grany.jpg" alt="first person of rate">
+            </div>
+            <div class="team__rate team__rate--box">
+              <h3 class="team__rate team__rate--name">Abdulah Amagaramph</h3>
+              <p class="team__rate--position">cooperatice director of globallogic team</p>
+              <p class="team__rate--description">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit.
+              </p>
+              <div class="team__rate team__rate--progress">
+                <div class="progress__stat">
+                  <p class="team__rate team__rate--skills">branding</p>
+                  <span class="progress__value">80%</span>
+                </div>
+                <progress class="progress" max="100" value="80"></progress>
+              </div>
+              <div class="team__rate team__rate--progress">
+                <div class="progress__stat">
+                  <p class="team__rate team__rate--skills">web design</p>
+                  <span class="progress__value">60%</span>
+                </div>
+                <progress class="progress" max="100" value="60"></progress>
+              </div>
+              <div class="team__rate team__rate--progress">
+                <div class="progress__stat">
+                  <p class="team__rate team__rate--skills">UI</p>
+                  <span class="progress__value">90%</span>
+                </div>
+                <progress class="progress" max="100" value="90"></progress>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-buttons"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End // .team -->
+
+  <!-- start // .our-price -->
+  <div class="our-price">
+    <div class="our-price__container">
+      <div class="our-price__price-title section-title">
+        <h2 class="section-title__title">Our Price</h2>
+        <p class="section-title__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium</p>
+      </div>
+      <div class="our-price__price-list">
+        <div class="our-price__premium">
+          <div class="our-price__premium-content">
+            <h4 class="our-price__premium-head">Premium</h4>
+            <p class="our-price__amount">$ 60</p>
+            <p class="our-price__amount-title">Per Month</p>
+          </div>
+          <div class="our-price__premium-curtain">
+            <ul class="our-price__list">
+              <li class="our-price__list-item">Full Branding</li>
+              <li class="our-price__list-item">Project Management</li>
+              <li class="our-price__list-item">Unlimited Revisions</li>
+              <li class="our-price__list-item">24/7 h Service</li>
+              <li class="our-price__list-item">Free Domain</li>
+              <li class="our-price__list-item">Free Hosting</li>
+            </ul>
+            <a href="#" class="our-price__curtain-link">Let’s Start &#10095;</a>
+          </div>
+        </div>
+        <div class="our-price__premium">
+          <div class="our-price__premium-content">
+            <h4 class="our-price__premium-head">Standard</h4>
+            <p class="our-price__amount">$ 70</p>
+            <p class="our-price__amount-title">Per Month</p>
+          </div>
+          <div class="our-price__premium-curtain">
+            <ul class="our-price__list">
+              <li class="our-price__list-item">Full Branding</li>
+              <li class="our-price__list-item">Project Management</li>
+              <li class="our-price__list-item">Unlimited Revisions</li>
+              <li class="our-price__list-item">24/7 h Service</li>
+              <li class="our-price__list-item">Free Domain</li>
+              <li class="our-price__list-item">Free Hosting</li>
+            </ul>
+            <a href="#" class="our-price__curtain-link">Let’s Start &#10095;</a>
+          </div>
+        </div>
+        <div class="our-price__premium">
+          <div class="our-price__premium-content">
+            <h4 class="our-price__premium-head">Exclusive</h4>
+            <p class="our-price__amount">$ 80</p>
+            <p class="our-price__amount-title">Per Month</p>
+          </div>
+          <div class="our-price__premium-curtain">
+            <ul class="our-price__list">
+              <li class="our-price__list-item">Full Branding</li>
+              <li class="our-price__list-item">Project Management</li>
+              <li class="our-price__list-item">Unlimited Revisions</li>
+              <li class="our-price__list-item">24/7 h Service</li>
+              <li class="our-price__list-item">Free Domain</li>
+              <li class="our-price__list-item">Free Hosting</li>
+            </ul>
+            <a href="#" class="our-price__curtain-link">Let’s Start &#10095;</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- End // .our-services -->
-    <div class="portfolio">
-      <div class="portfolio__container">
-        <div class="section-title portfolio__title">
-          <h2 class="section-title__title">The portfolio</h2>
-          <p class="section-title__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+  </div>
+  <!-- End // .our-price -->
+
+  <!-- Start // .form -->
+  <div class="form">
+    <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <div class="form__row">
+        <div class="form__item">
+          <input class="form__input" type="text" id="name" name="name" required>
+          <label class="form__label" for="name">Your name</label>
         </div>
-        <ul class="portfolio__list">
-          <li class="portfolio__item"><a href="#" class="portfolio__link">All Works</a></li>
-          <li class="portfolio__item"><a href="#" class="portfolio__link">Print</a></li>
-          <li class="portfolio__item"><a href="#" class="portfolio__link">Indentity</a></li>
-          <li class="portfolio__item"><a href="#" class="portfolio__link">Branding</a></li>
-          <li class="portfolio__item"><a href="#" class="portfolio__link">Web</a></li>
-          <li class="portfolio__item"><a href="#" class="portfolio__link">HTML</a></li>
-          <li class="portfolio__item"><a href="#" class="portfolio__link">Wordpress</a></li>          
-        </ul>
-        <div class="portfolio__gallery">
-          <div class="portfolio__column-container">
-            <div class="portfolio__column">
-              <div class="portfolio__picture-box">
-                <img src="img/bag.jpg" alt="bag" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__picture-box">
-                <img src="img/table.jpg" alt="table" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__picture-box">
-                <img src="img/beer.jpg" alt="some beer" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio__column">
-              <div class="portfolio__picture-box">
-                <img src="img/red-book.jpg" alt="cool book" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__picture-box">
-                <img src="img/bottles.jpg" alt="bottles" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__picture-box">
-                <img src="img/green-book.jpg" alt="pees" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio__column-container">
-            <div class="portfolio__column">
-              <div class="portfolio__picture-box">
-                <img src="img/book.jpg" alt="book" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__picture-box">
-                <img src="img/table-part.jpg" alt="other table" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__picture-box">
-                <img src="img/seat.jpg" alt="seat" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="portfolio__column">
-              <div class="portfolio__picture-box">
-                <img src="img/garbeo.jpg" alt="garbeo" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__picture-box">
-                <img src="img/bag-2.jpg" alt="bag" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="portfolio__picture-box">
-                <img src="img/ipad-2.jpg" alt="ipod" class="portfolio__picture">
-                <div class="portfolio__gallery-content">
-                  <div class="portfolio__gallery-central-container">
-                    <h3 class="portfolio__gallery-title">Title here</h3>
-                    <p class="portfolio__gallery-paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/>
-                      </svg>
-                    </a>
-                    <a href="#" class="portfolio__gallery-link">
-                      <svg class="portfolio__gallery-icon" width="10" height="10" viewBox="0 0 24 24"><path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="form__item">
+          <input class="form__input" type="text" id="email" name="email" required>
+          <label class="form__label" for="email">Your email</label>
         </div>
-        <div class="portfolio__bottom-block">
-          <div class="portfolio__bottom-block-mask">
-            <p class="portfolio__bottom-block-paragraph">At vero eos et <span class="portfolio__bottom-block-paragraph portfolio__bottom-block-paragraph--select">accusamuset</span> iusto odio <span class="portfolio__bottom-block-paragraph portfolio__bottom-block-paragraph--select">dignissimos</span>  ducimus qui blanditiis </p>
-            <a href="#" class="portfolio__bottom-block-btn btn btn--light">Start Project</a>
-          </div>          
+        <div class="form__item">
+          <input class="form__input" type="text" id="subject" name="subject" required>
+          <label class="form__label" for="subject">Your subject</label>
         </div>
       </div>
-    </div>
-    <!-- End // .portfolio -->
-    <div class="our-price">
-      <div class="our-price__container">
-        <div class="our-price__price-title section-title">
-         <h2 class="section-title__title">Our Price</h2>
-         <p class="section-title__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-        </div>
-        <div class="our-price__price-list">
-          <div class="our-price__premium">
-            <div class="our-price__premium-content">
-              <h4 class="our-price__premium-head">Premium</h4>
-              <p class="our-price__amount">$ 60</p>
-              <p class="our-price__amount-title">Per Month</p>
-            </div>
-            <div class="our-price__premium-curtain">
-              <ul class="our-price__list">
-                <li class="our-price__list-item">Full Branding</li>
-                <li class="our-price__list-item">Project Management</li>
-                <li class="our-price__list-item">Unlimited Revisions</li>
-                <li class="our-price__list-item">24/7 h Service</li>
-                <li class="our-price__list-item">Free Domain</li>
-                <li class="our-price__list-item">Free Hosting</li>                
-              </ul>
-              <a href="#" class="our-price__curtain-link">Let’s Start &#10095;</a>
-            </div>
-          </div>
-          <div class="our-price__premium">
-            <div class="our-price__premium-content">
-              <h4 class="our-price__premium-head">Standard</h4>
-              <p class="our-price__amount">$ 70</p>
-              <p class="our-price__amount-title">Per Month</p>
-            </div>
-            <div class="our-price__premium-curtain">
-              <ul class="our-price__list">
-                <li class="our-price__list-item">Full Branding</li>
-                <li class="our-price__list-item">Project Management</li>
-                <li class="our-price__list-item">Unlimited Revisions</li>
-                <li class="our-price__list-item">24/7 h Service</li>
-                <li class="our-price__list-item">Free Domain</li>
-                <li class="our-price__list-item">Free Hosting</li>                
-              </ul>
-              <a href="#" class="our-price__curtain-link">Let’s Start &#10095;</a>
-            </div>
-          </div>
-          <div class="our-price__premium">
-            <div class="our-price__premium-content">
-              <h4 class="our-price__premium-head">Exclusive</h4>
-              <p class="our-price__amount">$ 80</p>
-              <p class="our-price__amount-title">Per Month</p>
-            </div>
-            <div class="our-price__premium-curtain">
-              <ul class="our-price__list">
-                <li class="our-price__list-item">Full Branding</li>
-                <li class="our-price__list-item">Project Management</li>
-                <li class="our-price__list-item">Unlimited Revisions</li>
-                <li class="our-price__list-item">24/7 h Service</li>
-                <li class="our-price__list-item">Free Domain</li>
-                <li class="our-price__list-item">Free Hosting</li>                
-              </ul>
-              <a href="#" class="our-price__curtain-link">Let’s Start &#10095;</a>
-            </div>
-          </div>
-        </div>       
+      <div class="form__row">
+        <label for="message" hidden></label>
+        <textarea class="form__textarea" id="message" name="message" required></textarea>
       </div>
-    </div>
-    <!-- End // .our-price -->
-    <div class="map">
-      <iframe class="map__card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10164.485581494264!2d30.50604516977539!3d50.438839449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed482dcdab9f23ad!2sMate+academy!5e0!3m2!1suk!2sua!4v1543951452113" frameborder="0" style="border:0" allowfullscreen>        
-      </iframe>
-      <h4 class="map__title">FIND US ON THE MAP</h4>
-    </div>
-  </main>
-  <script src="scripts/carousel.js"></script>
+      <div class="form__row">
+        <button class="form__btn our-price__premium-head" type="submit">Submit now</button>
+      </div>
+      <label for="surname" hidden></label>
+      <input name="surname" id="surname" type="text" value="surname" hidden/>
+    </form>
+  </div>
+  <!-- End // .form -->
+
+  <!-- start // .map -->
+  <div class="map">
+    <iframe class="map__card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10164.485581494264!2d30.50604516977539!3d50.438839449999996!2m3!1f0!2f0!3f0!3m2!1i024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed482dcdab9f23ad!2sMate+academy!5e0!3m2!1suk!2sua!4v1543951452113" frameborder="0" style="border:0" allowfullscreen>        
+    </iframe>
+    <h4 class="map__title">FIND US ON THE MAP</h4>
+  </div>
+ <!-- End // .map -->  
+</main>
+<script src="scripts/carousel.js"></script>
 </body>
 </html>
