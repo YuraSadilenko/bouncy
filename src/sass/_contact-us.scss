@@ -1,0 +1,39 @@
+.contact-us {
+  padding: 8rem 0;
+  background-color: $light-gray;
+
+  &__section-title {
+    margin: 0 auto 6rem;
+  }
+
+  &__inner {
+    margin: auto;
+    display: flex;
+    width: 80%;
+  }
+
+  &__item {
+    padding: 17.5rem 0 3rem;
+    text-align: center;
+    background-color: $btn-color-white
+  }
+
+  &__title {
+    color: $dark-gray;
+    font: 1.6rem $open-sans;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font: 1.4rem $open-sans;
+    margin-top: 2.5rem;
+  }
+
+  &__link {
+    display: block;
+    color: $gray;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
