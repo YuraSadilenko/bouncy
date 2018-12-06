@@ -110,6 +110,7 @@ html {
 
 .slider {
   width: 80%;
+  position: relative;
 }
 
 .slider__radio {
@@ -170,6 +171,7 @@ html {
   align-items: center;
   font-weight: 300;
   font-family: "Source Sans Pro", sans-serif;
+  padding: 6rem 0;
 }
 
 .team--box {
@@ -197,7 +199,7 @@ html {
 
 .team__photo {
   width: 100% auto;
-  height: 90%;
+  height: 95%;
 }
 
 .team__rate {
