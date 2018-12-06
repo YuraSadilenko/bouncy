@@ -1,0 +1,104 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+  font-family: $source-sans;
+
+  &--box {
+    text-align: center;
+  }
+
+  &__heading {
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50rem;
+    padding: 7rem 0;
+  }
+
+  &__img-box {
+    max-width: 27%;
+    height: 100%;
+    overflow: hidden;
+
+  }
+  &__photo {
+    width: 100% auto;
+    height: 90%;
+  }
+
+  &__rate {
+    color: $gray;
+    text-align: right;
+    
+    &--box {
+      width: 30%;
+
+    }
+
+    &--name {
+      font-size: 2.5rem;
+      font-weight: 100;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+    }
+
+    &--position {
+      font-size: 1.5rem;
+      font-style: italic;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    &--description {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      text-align: right;
+    }
+
+    &--progress {
+      font-size: 1.5rem;
+      text-align: left;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    &--skills {
+      text-align: left;
+    }
+  }
+  
+}
+
+.progress {
+  margin-bottom: 1rem;
+  font-size: .6rem;
+  width: 100%;
+
+  &[value]::-webkit-progress-bar,
+  &[value]::-moz-progress-bar {
+    background-color: $gray;
+    border-radius: 2px;
+  }
+  &[value]::-webkit-progress-value,
+  &[value]::-moz-progress-value {
+    background-color: $green-color;
+    border-radius: 2px;
+  }
+
+
+  &__stat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__value {
+  }
+}

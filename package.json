@@ -1,7 +1,7 @@
 {
   "name": "bouncy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Team project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +10,22 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
+    "git": "^0.1.5",
     "jquery": "^3.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuraSadilenko/bouncy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YuraSadilenko/bouncy/issues"
+  },
+  "homepage": "https://github.com/YuraSadilenko/bouncy#readme"
 }
