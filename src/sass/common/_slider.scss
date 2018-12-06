@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // .slider {
 //   margin: 0 auto;
 // 	width: 80%;
@@ -58,11 +59,116 @@
 //   -o-transition: all 0.4s ease-in-out;
 //   transition: all 0.4s ease-in-out;
 // }
+=======
+.slider {
+  width: 80%;
+  position: relative;
 
+  @media (min-width:300px) and (max-width: 767px) {
+    .slider {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
+  &__radio {
+    display: none;
 
+    &--1 {
+      &:checked ~ .slider-box--one {
+        display: block;
+      }
+
+      &:checked ~ .slider__labels .slider__labels-item--first::after {
+        background: $green-color;
+      }
+    }
+
+    &--2 {
+      &:checked ~ .slider-box--two {
+        display: block;
+      }
+
+      &:checked ~ .slider__labels .slider__labels-item--second::after {
+        background-color: $green-color;
+      }
+    }
+
+    &--3 {
+      &:checked ~ .slider-box--three {
+        display: block;
+      }
+
+      &:checked ~ .slider__labels .slider__labels-item--third::after {
+        background: $green-color;
+      }
+    }
+  }
+}
+
+.slider__labels {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  @media (min-width:768px) and (max-width: 1199px) {
+    & {
+      bottom: 8%;
+    }
+  }
+
+  @media (min-width:1200px) and (max-width: 1800) {
+    & {
+      bottom: 10%;
+    }
+  }
+
+>>>>>>> master
+
+  
+
+  &-item::after {
+    content: "";
+    display: inline-block;
+    margin: 0 1rem;
+    width: .8rem;
+    height: .8rem;
+    border: 1px solid $green-color;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media (min-width:768px) and (max-width: 1199px) {
+      & {
+        width: 1rem;
+        height: 1rem;
+    
+      }
+    }
+  
+    @media (min-width:1200px) and (max-width: 1800) {
+      & {
+        width: 2.3rem;
+        height: 2.3rem;
+        border: 2px solid $green-color;
+    
+      }
+    }
+  
+  }
+}
+
+.slider-box {
+  display: none;
+  height: 50rem;
+
+<<<<<<< HEAD
 // .slide_btn.active, .slide_btn:hover {
 // 	background-color: $green-color;
 // 	cursor: pointer;
 // }
+=======
+}
+>>>>>>> master
 
