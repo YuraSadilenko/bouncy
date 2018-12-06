@@ -2200,6 +2200,11 @@ html {
   background-size: cover;
 }
 
+.green-block--converse {
+  background: url(img/converse.jpg) center no-repeat;
+  background-size: cover;
+}
+
 .green-block__mask {
   background: rgba(0, 204, 153, 0.8);
   padding: 58px 0 57px;
@@ -2632,7 +2637,7 @@ html {
   width: 80%;
   overflow: hidden;
   position: relative;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: -50%;
   transition: all 0.2s;
@@ -2853,6 +2858,120 @@ html {
   }
   .page-header__text-block {
     margin: 6rem 0;
+  }
+}
+
+.feature__title {
+  margin: 0 auto;
+  padding: 79px 0 60px;
+}
+
+.feature__gallery {
+  display: flex;
+}
+
+.feature__bigger-picture {
+  width: 50%;
+  background: url(img/whiskey.jpg) no-repeat center;
+  background-size: cover;
+  height: 320px;
+  position: relative;
+}
+
+.feature__bigger-picture:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 35px;
+  border-left: 1px solid #ffffff;
+}
+
+.feature__bigger-picture:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  border-top: 1px solid #ffffff;
+}
+
+.feature__smaller-picture {
+  display: flex;
+  width: 50%;
+}
+
+.feature__picture-first {
+  position: relative;
+  width: 100%;
+  background: url(img/whiskey-1.jpg) no-repeat center;
+  background-size: cover;
+  height: 320px;
+}
+
+.feature__curtain-a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.feature__curtain-a:after {
+  content: "vintage";
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: transparent;
+  font: 2rem "Source Sans Pro", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.feature__curtain-a--brand:after {
+  content: "branding";
+}
+
+.feature__curtain-a:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.feature__curtain-a:hover:after {
+  color: #ffffff;
+}
+
+.feature__picture-second {
+  position: relative;
+  width: 100%;
+  background: url(img/book.jpg) no-repeat center;
+  background-size: cover;
+  height: 320px;
+}
+
+.feature__green-block-container {
+  display: flex;
+  width: 1029px;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 956px) {
+  .feature__green-block-container {
+    padding: 0 10%;
+    justify-content: center;
+  }
+  .feature__btn {
+    margin-top: 15px;
   }
 }
 
