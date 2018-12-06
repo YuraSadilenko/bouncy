@@ -1294,6 +1294,46 @@ a.slide_btn {
   }
 }
 
+.main-info {
+  padding: 8rem 4rem;
+}
+
+.main-info__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 84rem;
+  margin: auto;
+}
+
+.main-info__section-title {
+  margin-right: 2rem;
+  margin-top: 3.5rem;
+  text-align: left;
+}
+
+.main-info__btn {
+  margin: 3.5rem 0;
+}
+
+.main-info__ipad {
+  width: 20rem;
+  background-image: url("../img/ipad.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+@media screen and (max-width: 600px) {
+  .main-info__section-title {
+    margin: auto;
+    text-align: center;
+  }
+  .main-info__ipad {
+    display: none;
+  }
+}
+
 .form {
   width: 80%;
   padding: 8rem 0;
