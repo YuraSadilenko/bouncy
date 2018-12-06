@@ -1,68 +1,11 @@
-<<<<<<< HEAD
-// .slider {
-//   margin: 0 auto;
-// 	width: 80%;
-
-// 	&__viewer {
-// 		padding: 6rem 0;
-//   	height: 550px;
-//   	overflow: hidden;
-// 		position: relative;
-
-// 		&--group {
-//   		height: 100%;
-//   		position: relative;
-//   		width: 100%;
-// 		}
-// 	}
-// }
-
-// .slide {
-//   height: 100%;
-// 	position: absolute;
-// 	width: 100%;
-// 	background-color: #fff;
-	
-// 	&:first-child {
-// 		display: block;
-// 	}
-	
-// 	&:nth-of-type(1) {
-// 	}
-	
-	
-// 	&:nth-of-type(2) {
-// 	}
-	
-// 	&:nth-of-type(3) {
-// 	}
-// }
-
-// .slide-buttons {
-// 	position: absolute;
-// 	left: 50%;
-// 	bottom: 10%;
-// 	transform: translate(-50%, -50%);
-//   text-align: center;
-// }
-
-// a.slide_btn {
-// 	display: inline-block;
-// 	width: 1rem;
-// 	height: 1rem;
-// 	border: 1px solid $green-color;
-// 	border-radius: 50%;
-//   margin: 0 1rem;
-//   -webkit-transition: all 0.4s ease-in-out;
-//   -moz-transition: all 0.4s ease-in-out;
-//   -ms-transition: all 0.4s ease-in-out;
-//   -o-transition: all 0.4s ease-in-out;
-//   transition: all 0.4s ease-in-out;
-// }
-=======
 .slider {
   width: 80%;
   position: relative;
+
+  &--comments {
+    width: 90%;
+    padding: 5rem 0;
+  }
 
   @media (min-width:300px) and (max-width: 767px) {
     .slider {
@@ -75,7 +18,7 @@
     display: none;
 
     &--1 {
-      &:checked ~ .slider-box--one {
+      &:checked ~ .slider-box-team--one {
         display: block;
       }
 
@@ -85,7 +28,7 @@
     }
 
     &--2 {
-      &:checked ~ .slider-box--two {
+      &:checked ~ .slider-box-team--two {
         display: block;
       }
 
@@ -95,12 +38,46 @@
     }
 
     &--3 {
-      &:checked ~ .slider-box--three {
+      &:checked ~ .slider-box-team--three {
         display: block;
       }
 
       &:checked ~ .slider__labels .slider__labels-item--third::after {
         background: $green-color;
+      }
+    }
+
+    &-comments {
+      display: none;
+
+      &--1 {
+        &:checked ~ .slider-box-comment--one {
+          display: block;
+        }
+  
+        &:checked ~ .slider__labels-comment .slider__labels-comment-item--first::after {
+          background: $green-color;
+        }
+      }
+  
+      &--2 {
+        &:checked ~ .slider-box-comment--two {
+          display: block;
+        }
+  
+        &:checked ~ .slider__labels-comment .slider__labels-comment-item--second::after {
+          background-color: $green-color;
+        }
+      }
+  
+      &--3 {
+        &:checked ~ .slider-box-comment--three {
+          display: block;
+        }
+  
+        &:checked ~ .slider__labels-comment .slider__labels-comment-item--third::after {
+          background: $green-color;
+        }
       }
     }
   }
@@ -124,10 +101,6 @@
       bottom: 10%;
     }
   }
-
->>>>>>> master
-
-  
 
   &-item::after {
     content: "";
@@ -155,20 +128,66 @@
     
       }
     }
+  }
+}
+
+.slider__labels-comment {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  @media (min-width:768px) and (max-width: 1199px) {
+    & {
+      bottom: 12%;
+    }
+  }
+
+  @media (min-width:1200px) and (max-width: 1800) {
+    & {
+      bottom: 10%;
+    }
+  }
+
+  &-item::after {
+    content: "";
+    display: inline-block;
+    margin: 0 1rem;
+    width: .8rem;
+    height: .8rem;
+    border: 1px solid $green-color;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media (min-width:768px) and (max-width: 1199px) {
+      & {
+        width: 1rem;
+        height: 1rem;
+    
+      }
+    }
   
+    @media (min-width:1200px) and (max-width: 1800) {
+      & {
+        width: 2.3rem;
+        height: 2.3rem;
+        border: 2px solid $green-color;
+      }
+    }
   }
 }
 
 .slider-box {
-  display: none;
-  height: 50rem;
 
-<<<<<<< HEAD
-// .slide_btn.active, .slide_btn:hover {
-// 	background-color: $green-color;
-// 	cursor: pointer;
-// }
-=======
+  &-team{
+    display: none;
+    height: 50rem;
+  }
+
+  &-comment {
+    display: none;
+    height: 50rem;
+  }
 }
->>>>>>> master
 

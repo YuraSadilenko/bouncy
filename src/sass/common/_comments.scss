@@ -6,4 +6,18 @@
   padding: 5rem 0;
   font-family: $source-sans;
 
+  &__slider {
+    height: 50rem;
+    width: 100%;
+    background: #fff;
+    margin: auto;
+  }
+
+  &__person {
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+
+  }
 }
