@@ -129,7 +129,7 @@
       font-size: 1.5rem;
       text-align: left;
       text-transform: uppercase;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
 
     &--skills {
@@ -139,29 +139,3 @@
   
 }
 
-.progress {
-  margin-bottom: 1rem;
-  font-size: .6rem;
-  width: 100%;
-
-  &[value]::-webkit-progress-bar,
-  &[value]::-moz-progress-bar {
-    background-color: $gray;
-    border-radius: 2px;
-  }
-  &[value]::-webkit-progress-value,
-  &[value]::-moz-progress-value {
-    background-color: $green-color;
-    border-radius: 2px;
-  }
-
-
-  &__stat {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  &__value {
-  }
-}
