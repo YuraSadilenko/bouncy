@@ -1,0 +1,43 @@
+.main-info {
+  padding: 8rem 4rem;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: stretch;
+    max-width: 84rem;
+    margin: auto;
+  }
+
+  &__section-title {
+    margin-right: 2rem;
+    margin-top: 3.5rem;
+    text-align: left;
+  }
+
+  &__btn {
+    margin: 3.5rem 0;
+  }
+
+  &__ipad {
+    width: 20rem;
+    background-image: url("../img/ipad.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-info {
+    &__section-title {
+      margin: auto;
+      text-align: center;
+    }
+
+    &__ipad {
+      display: none;
+    }
+  }
+}
