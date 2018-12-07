@@ -1,0 +1,118 @@
+.feature {
+  &__title {
+    margin: 0 auto;
+    padding: 79px 0 60px;
+  }
+
+  &__gallery {
+    display: flex;
+  }
+
+  &__bigger-picture {
+    width: 50%;
+    background: url(img/whiskey.jpg) no-repeat center;
+    background-size: cover;
+    height: 320px;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 35px;
+      border-left: 1px solid $btn-color-white;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 35px;
+      border-top: 1px solid $btn-color-white;
+    }
+  }
+
+  &__smaller-picture {
+    display: flex;
+    width: 50%;
+  }
+
+  &__picture-first {
+    position: relative;
+    width: 100%;
+    background: url(img/whiskey-1.jpg) no-repeat center;
+    background-size: cover;
+    height: 320px;
+  }
+
+  &__curtain-a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: 0.3s;
+
+    &:after {
+      content: "vintage";
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: transparent;
+      font: 2rem $source-sans;
+      letter-spacing: 0.2rem;
+    }
+    &--brand {
+      &:after {
+        content: "branding";
+      }
+    }
+
+    &:hover {
+      background: $dark-black;
+      &:after {
+        color: $btn-color-white;
+      }
+    }
+  }
+
+  &__picture-second {
+    position: relative;
+    width: 100%;
+    background: url(img/book.jpg) no-repeat center;
+    background-size: cover;
+    height: 320px;
+  }
+
+  &__green-block-container {
+    display: flex;
+    width: 1029px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 956px) {
+  .feature {
+    &__green-block-container {
+      padding: 0 10%;
+      justify-content: center;
+    }
+
+    &__btn {
+      margin-top: 15px;
+    }
+  }
+}

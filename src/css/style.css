@@ -1860,7 +1860,7 @@ body {
   width: 80%;
   overflow: hidden;
   position: relative;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: -50%;
   transition: all 0.2s;
@@ -2386,6 +2386,11 @@ body {
   background-size: cover;
 }
 
+.green-block--converse {
+  background: url(img/converse.jpg) center no-repeat;
+  background-size: cover;
+}
+
 .green-block__mask {
   background: rgba(0, 204, 153, 0.8);
   padding: 58px 0 57px;
@@ -2818,7 +2823,7 @@ body {
   width: 80%;
   overflow: hidden;
   position: relative;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: -50%;
   transition: all 0.2s;
@@ -3168,6 +3173,120 @@ body {
   }
 }
 
+.feature__title {
+  margin: 0 auto;
+  padding: 79px 0 60px;
+}
+
+.feature__gallery {
+  display: flex;
+}
+
+.feature__bigger-picture {
+  width: 50%;
+  background: url(img/whiskey.jpg) no-repeat center;
+  background-size: cover;
+  height: 320px;
+  position: relative;
+}
+
+.feature__bigger-picture:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 35px;
+  border-left: 1px solid #ffffff;
+}
+
+.feature__bigger-picture:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  border-top: 1px solid #ffffff;
+}
+
+.feature__smaller-picture {
+  display: flex;
+  width: 50%;
+}
+
+.feature__picture-first {
+  position: relative;
+  width: 100%;
+  background: url(img/whiskey-1.jpg) no-repeat center;
+  background-size: cover;
+  height: 320px;
+}
+
+.feature__curtain-a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.feature__curtain-a:after {
+  content: "vintage";
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: transparent;
+  font: 2rem "Source Sans Pro", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.feature__curtain-a--brand:after {
+  content: "branding";
+}
+
+.feature__curtain-a:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.feature__curtain-a:hover:after {
+  color: #ffffff;
+}
+
+.feature__picture-second {
+  position: relative;
+  width: 100%;
+  background: url(img/book.jpg) no-repeat center;
+  background-size: cover;
+  height: 320px;
+}
+
+.feature__green-block-container {
+  display: flex;
+  width: 1029px;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 956px) {
+  .feature__green-block-container {
+    padding: 0 10%;
+    justify-content: center;
+  }
+  .feature__btn {
+    margin-top: 15px;
+  }
+}
+
 .our-price {
   background: #f3f3f3;
 }
@@ -3420,6 +3539,100 @@ body {
   }
 }
 
+.contact-us {
+  padding: 8rem 0;
+  background-color: #f3f3f3;
+}
+
+.contact-us__section-title {
+  margin: 0 auto 6rem;
+}
+
+.contact-us__inner {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.contact-us__item {
+  padding-bottom: 3rem;
+  width: 29rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.contact-us__image-container {
+  position: relative;
+}
+
+.contact-us__image-container::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 50rem;
+  height: 50rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.contact-us__image-container--email::after {
+  background-image: url("../img/mail.png");
+}
+
+.contact-us__image-container--location::after {
+  background-image: url("../img/location.png");
+}
+
+.contact-us__image-container--phone::after {
+  background-image: url("../img/phone.png");
+}
+
+.contact-us__image {
+  position: relative;
+  display: block;
+  width: 100%;
+  filter: saturate(0) brightness(40%);
+}
+
+.contact-us__title {
+  margin-top: 3rem;
+  color: #464646;
+  font: 1.6rem "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.contact-us__description {
+  font: 1.4rem "Open Sans", sans-serif;
+  margin-top: 2rem;
+}
+
+.contact-us__link {
+  display: block;
+  color: #81868e;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.contact-us__link:hover {
+  letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 1120px) {
+  .contact-us__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-us__item {
+    width: 80%;
+    min-width: 29rem;
+  }
+}
+
 .page-footer {
   width: 100%;
   padding: 8rem 0;
@@ -3536,4 +3749,87 @@ body {
 .map__card {
   width: 100%;
   height: 496px;
+}
+
+.subscribe {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 39.2rem;
+  align-items: flex-end;
+}
+
+.subscribe__background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/mountains.jpg");
+  background-position: bottom;
+  background-size: cover;
+  filter: grayscale(100%) brightness(20%);
+}
+
+.subscribe__content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.subscribe__section {
+  left: 0;
+  right: 0;
+  margin: 6.3rem auto;
+}
+
+.subscribe__section--text {
+  width: 46.3rem;
+}
+
+.subscribe__section--title {
+  color: #f3f3f3;
+}
+
+.subscribe__section--paragraph {
+  color: #81868e;
+  line-height: 2.5rem;
+}
+
+.subscribe__section--form {
+  display: block;
+  width: 30%;
+}
+
+.subscribe__item--btn {
+  height: 4rem;
+  width: 15.1rem;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+.subscribe__item--input {
+  height: 3.9rem;
+  width: 35.6rem;
+}
+
+.subscribe__input {
+  font: 1.4rem "Open Sans", sans-serif;
+  color: #f3f3f3;
+  background-color: transparent;
+}
+
+.subscribe__label {
+  left: 0;
+  font: 1.4rem "Open Sans", sans-serif;
+  color: #f3f3f3;
+  opacity: 1;
+}
+
+@media screen and (max-width: 524px) {
+  .subscribe__content {
+    padding: 0 3rem;
+  }
+  .subscribe__item--btn {
+    width: 100%;
+    max-width: 35.6rem;
+  }
 }
