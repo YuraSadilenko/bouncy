@@ -354,9 +354,15 @@ body {
   text-align: center;
 }
 
+@media (min-width: 250px) and (max-width: 767px) {
+  .slider__labels-comment {
+    bottom: -15%;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .slider__labels-comment {
-    bottom: 12%;
+    bottom: 18%;
   }
 }
 
@@ -2185,9 +2191,15 @@ body {
   text-align: center;
 }
 
+@media (min-width: 250px) and (max-width: 767px) {
+  .slider__labels-comment {
+    bottom: -15%;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .slider__labels-comment {
-    bottom: 12%;
+    bottom: 18%;
   }
 }
 
@@ -3041,13 +3053,40 @@ body {
   padding: 5rem 0;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .comments {
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .comments {
+    line-height: 1;
+  }
+}
+
 .comments__slider {
   display: flex;
-  justify-content: space-between;
   height: 35rem;
   width: 100%;
   background: #fff;
   margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .comments__slider {
+    height: 30rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .comments__slider {
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
 }
 
 .comments__person {
@@ -3055,6 +3094,19 @@ body {
   height: 15rem;
   border-radius: 50%;
   margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .comments__person {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .comments__person {
+    display: none;
+  }
 }
 
 .comments__person--nick {
@@ -3089,9 +3141,31 @@ body {
   font-weight: 700;
 }
 
+@media (min-width: 300px) and (max-width: 767px) {
+  .comments__text-box--name {
+    margin-bottom: 2rem;
+  }
+}
+
 .comments__text-box--position {
   width: 90%;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .comments__text-box {
+    width: 80%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .comments__text-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: flex-start;
+    width: 95%;
+    text-align: center;
+  }
 }
 
 .our-price {
