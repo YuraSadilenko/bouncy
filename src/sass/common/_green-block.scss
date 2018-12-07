@@ -2,6 +2,11 @@
   background: url(img/t-shirt.jpg) center no-repeat;
   background-size: cover;
 
+  &--converse {
+    background: url(img/converse.jpg) center no-repeat;
+    background-size: cover;
+  }
+
   &__mask {
     background: $dark-blue;
     padding: 58px 0 57px;
