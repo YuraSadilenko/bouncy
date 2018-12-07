@@ -1283,8 +1283,8 @@ html {
   left: 50%;
   content: "";
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 50rem;
+  height: 50rem;
   background-position: center;
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
@@ -1331,6 +1331,17 @@ html {
 
 .contact-us__link:hover {
   letter-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 1120px) {
+  .contact-us__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-us__item {
+    width: 80%;
+    min-width: 29rem;
+  }
 }
 
 .page-footer {
