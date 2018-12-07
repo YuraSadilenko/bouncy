@@ -30,9 +30,54 @@
     <p class="page-header__description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
       praesentium</p>
   </div>
-  <a href="#" class="page-header__slide-bottom"></a>
+  <a href="#main-info" class="page-header__slide-bottom"></a>
 </header>
 <main>
+  <section class="main-info" id="main-info">
+    <div class="main-info__inner">
+      <div class="main-info__section-title section-title">
+        <h2 class="section-title__title">this is bouncy</h2>
+        <p class="section-title__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+          cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
+          dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
+        <a href="#" class="main-info__btn btn btn--dark">Read More</a>
+      </div>
+      <div class="main-info__ipad"></div>
+    </div>
+  </section>
+
+  <!-- Start // .feature -->
+  <div class="feature">
+    <div class="feature__title section-title">
+        <h2 class="section-title__title">Featured project</h2>
+        <p class="section-title__paragraph">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium
+        </p>
+    </div>
+    <div class="feature__gallery">
+      <div class="feature__bigger-picture">
+      </div>
+      <div class="feature__smaller-picture">
+        <div class="feature__picture-first">
+          <a href="#" class="feature__curtain-a"></a>
+        </div>
+        <div class="feature__picture-second">
+          <a href="#" class="feature__curtain-a feature__curtain-a--brand"></a>
+        </div>
+      </div>
+    </div>
+    <div class="green-block green-block--converse">
+      <div class="feature__green-block green-block__mask">
+        <div class="feature__green-block-container ">
+          <p class="green-block__paragraph">At vero eos et accusamus et iusto odio <span class="green-block__paragraph green-block__paragraph--select">dignissimos</span> ducimus qui blanditiis</p>
+          <a href="#" class="feature__btn btn btn--light">Submit Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End // .feature -->
 
   <!-- Start // .our-services -->
   <div class="our-services">
@@ -413,11 +458,11 @@
           </div>
         </div>
       </div>
-      <div class="portfolio__bottom-block">
-        <div class="portfolio__bottom-block-mask">
-          <p class="portfolio__bottom-block-paragraph">At vero eos et <span
-                  class="portfolio__bottom-block-paragraph portfolio__bottom-block-paragraph--select">accusamuset</span>
-            iusto odio <span class="portfolio__bottom-block-paragraph portfolio__bottom-block-paragraph--select">dignissimos</span>
+      <div class="green-block">
+        <div class="portfolio__bottom-block green-block__mask">
+          <p class="green-block__paragraph">At vero eos et <span
+                  class="green-block__paragraph green-block__paragraph--select">accusamuset</span>
+            iusto odio <span class="green-block__paragraph green-block__paragraph--select">dignissimos</span>
             ducimus qui blanditiis </p>
           <a href="#" class="portfolio__bottom-block-btn btn btn--light">Start Project</a>
         </div>
@@ -434,111 +479,148 @@
         Ratione enim corporis culpa eveniet eum! Eos?
       </p>
     </div>
+
     <div class="slider">
-      <div class="slider__viewer">
-        <div class="slider__viewer--group">
-          <div class="slide team__slide">
-            <div class="team__img-box">
-              <img class="team__photo" src="./img/team-beard.jpg" alt="first person of rate">
-            </div>
-            <div class="team__rate team__rate--box">
-              <h3 class="team__rate team__rate--name">Abdulah Amagaramph</h3>
-              <p class="team__rate--position">cooperatice director of globallogic team</p>
-              <p class="team__rate--description">Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="team__rate team__rate--progress">
-                <div class="progress__stat">
-                  <p class="team__rate team__rate--skills">branding</p>
-                  <span class="progress__value">80%</span>
-                </div>
-                <progress class="progress" max="100" value="80"></progress>
-              </div>
-              <div class="team__rate team__rate--progress">
-                <div class="progress__stat">
-                  <p class="team__rate team__rate--skills">web design</p>
-                  <span class="progress__value">100%</span>
-                </div>
-                <progress class="progress" max="100" value="100"></progress>
-              </div>
-              <div class="team__rate team__rate--progress">
-                <div class="progress__stat">
-                  <p class="team__rate team__rate--skills">UI</p>
-                  <span class="progress__value">75%</span>
-                </div>
-                <progress class="progress" max="100" value="75"></progress>
-              </div>
-            </div>
+
+      <input type="radio" checked="checked" id="slide1" class="slider__radio slider__radio--1" name="slider-selector" />
+      <input type="radio" id="slide2" class="slider__radio slider__radio--2" name="slider-selector" />
+      <input type="radio" id="slide3" class="slider__radio slider__radio--3" name="slider-selector" />
+
+      <div class="slider-box slider-box--one">
+        <div class="team__slider">
+          <div class="team__img-box">
+            <img class="team__photo" src="./img/team-beard.jpg" alt="first person of rate">
           </div>
-          <div class="slide team__slide">
-            <div class="team__img-box">
-              <img class="team__photo" src="./img/team-guy.jpg" alt="first person of rate">
-            </div>
-            <div class="team__rate team__rate--box">
-              <h3 class="team__rate team__rate--name">Nomad Lefcovich</h3>
-              <p class="team__rate team__rate--position">FrontEnd Developer Luxoft team</p>
-              <p class="team__rate team__rate--description">Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Lorem ipsum dolor sit amet consectetur.
-              </p>
-              <div class="team__rate team__rate--progress">
-                <div class="progress__stat">
-                  <p class="team__rate team__rate--skills">branding</p>
-                  <span class="progress__value">90%</span>
-                </div>
-                <progress class="progress" max="100" value="90"></progress>
-              </div>
-              <div class="team__rate team__rate--progress">
-                <div class="progress__stat">
-                  <p class="team__rate team__rate--skills">web design</p>
-                  <span class="progress__value">60%</span>
-                </div>
-                <progress class="progress" max="100" value="60"></progress>
-              </div>
-              <div class="team__rate team__rate--progress">
-                <div class="progress__stat">
-                  <p class="team__rate team__rate--skills">UI</p>
-                  <span class="progress__value">50%</span>
-                </div>
-                <progress class="progress" max="100" value="50"></progress>
+          <div class="team__rate team__rate--box">
+            <h3 class="team__rate team__rate--name">Abdulah Amagaramph</h3>
+            <p class="team__rate--position">cooperatice director of globallogic team</p>
+            <p class="team__rate--description">Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="team__rate team__rate--progress">
+              <div class="progress">
+                <p class="progress-name">branding</p>
+                <progress max="100" value="100"></progress>
+                <div class="progress-value"></div>
+                <div class="progress-bg"><div class="progress-bar"></div></div>
               </div>
             </div>
-          </div>
-          <div class="slide team__slide">
-            <div class="team__img-box">
-              <img class="team__photo" src="./img/team-grany.jpg" alt="first person of rate">
-            </div>
-            <div class="team__rate team__rate--box">
-              <h3 class="team__rate team__rate--name">Abdulah Amagaramph</h3>
-              <p class="team__rate--position">cooperatice director of globallogic team</p>
-              <p class="team__rate--description">Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit.
-              </p>
-              <div class="team__rate team__rate--progress">
-                <div class="progress__stat">
-                  <p class="team__rate team__rate--skills">branding</p>
-                  <span class="progress__value">80%</span>
-                </div>
-                <progress class="progress" max="100" value="80"></progress>
-              </div>
-              <div class="team__rate team__rate--progress">
-                <div class="progress__stat">
-                  <p class="team__rate team__rate--skills">web design</p>
-                  <span class="progress__value">60%</span>
-                </div>
-                <progress class="progress" max="100" value="60"></progress>
-              </div>
-              <div class="team__rate team__rate--progress">
-                <div class="progress__stat">
-                  <p class="team__rate team__rate--skills">UI</p>
-                  <span class="progress__value">90%</span>
-                </div>
-                <progress class="progress" max="100" value="90"></progress>
+
+            <div class="team__rate team__rate--progress">
+              <div class="progress">
+                <p class="progress-name">web design</p>
+                <progress max="100" value="50"></progress>
+                <div class="progress-value"></div>
+                <div class="progress-bg"><div class="progress-bar"></div></div>
               </div>
             </div>
+
+            <div class="team__rate team__rate--progress">
+              <div class="progress">
+                <p class="progress-name">UI</p>
+                <progress max="100" value="70"></progress>
+                <div class="progress-value"></div>
+                <div class="progress-bg"><div class="progress-bar"></div></div>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div class="slide-buttons"></div>
       </div>
+
+      <div class="slider-box slider-box--two">
+        <div class="team__slider">
+          <div class="team__img-box">
+            <img class="team__photo" src="./img/team-guy.jpg" alt="first person of rate">
+          </div>
+          <div class="team__rate team__rate--box">
+            <h3 class="team__rate team__rate--name">Nomad Lefcovich</h3>
+            <p class="team__rate team__rate--position">FrontEnd Developer Luxoft team</p>
+            <p class="team__rate team__rate--description">Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Lorem ipsum dolor sit amet consectetur.
+            </p>
+
+            <div class="team__rate team__rate--progress">
+              <div class="progress">
+                <p class="progress-name">branding</p>
+                <progress max="100" value="37"></progress>
+                <div class="progress-value"></div>
+                <div class="progress-bg"><div class="progress-bar"></div></div>
+              </div>
+            </div>
+
+            <div class="team__rate team__rate--progress">
+              <div class="progress">
+                <p class="progress-name">web design</p>
+                <progress max="100" value="58"></progress>
+                <div class="progress-value"></div>
+                <div class="progress-bg"><div class="progress-bar"></div></div>
+              </div>
+            </div>
+
+            <div class="team__rate team__rate--progress">
+              <div class="progress">
+                <p class="progress-name">UI</p>
+                <progress max="100" value="90"></progress>
+                <div class="progress-value"></div>
+                <div class="progress-bg"><div class="progress-bar"></div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-box slider-box--three">
+        <div class="team__slider">
+          <div class="team__img-box">
+            <img class="team__photo" src="./img/team-grany.jpg" alt="first person of rate">
+          </div>
+          <div class="team__rate team__rate--box">
+            <h3 class="team__rate team__rate--name">Ararat Coblpot</h3>
+            <p class="team__rate team__rate--position">TeamLeader Developer EPAM</p>
+            <p class="team__rate team__rate--description">Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Lorem ipsum dolor sit amet consectetur.
+            </p>
+
+            <div class="team__rate team__rate--progress">
+              <div class="progress">
+                <p class="progress-name">branding</p>
+                <progress max="100" value="60"></progress>
+                <div class="progress-value"></div>
+                <div class="progress-bg"><div class="progress-bar"></div></div>
+              </div>
+            </div>
+
+            <div class="team__rate team__rate--progress">
+              <div class="progress">
+                <p class="progress-name">web design</p>
+                <progress max="100" value="70"></progress>
+                <div class="progress-value"></div>
+                <div class="progress-bg"><div class="progress-bar"></div></div>
+              </div>
+            </div>
+
+            <div class="team__rate team__rate--progress">
+              <div class="progress">
+                <p class="progress-name">UI</p>
+                <progress max="100" value="68"></progress>
+                <div class="progress-value"></div>
+                <div class="progress-bg"><div class="progress-bar"></div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="slider__labels">
+          <label class="slider__labels-item slider__labels-item--first" for="slide1"></label>
+          <label class="slider__labels-item slider__labels-item--second" for="slide2"></label>
+          <label class="slider__labels-item slider__labels-item--third" for="slide3"></label>
+      </div>
+
     </div>
   </section>
   <!-- End // .team -->
@@ -633,6 +715,46 @@
   </div>
   <!-- End // .subscribe -->
 
+  <section class="contact-us">
+    <div class="section-title contact-us__section-title">
+      <h2 class="section-title__title">contact us</h2>
+      <p class="section-title__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+        praesentium</p>
+    </div>
+    <div class="contact-us__inner">
+      <div class="contact-us__item">
+        <div class="contact-us__image-container contact-us__image-container--email">
+          <img class="contact-us__image contact-us__image" src="img/writing-hand.jpg" alt="write mail">
+        </div>
+        <h3 class="contact-us__title">email</h3>
+        <div class="contact-us__description">
+          <a href="mailto:hello@codecafe.com" class="contact-us__link">hello@codecafe.com</a>
+          <a href="mailto:personal@codecafe.com" class="contact-us__link">personal@codecafe.com</a>
+        </div>
+      </div>
+      <div class="contact-us__item">
+        <div class="contact-us__image-container contact-us__image-container--location">
+          <img class="contact-us__image" src="img/map.jpg" alt="location on map">
+        </div>
+        <h3 class="contact-us__title">our office</h3>
+        <div class="contact-us__description">
+          <a href="https://www.google.com/maps/search/240+Bhatikhana,+8200+Barisal+Bangladesh/@22.6954585,90.3187847,13z/data=!3m1!4b1"
+             class="contact-us__link" target="_blank">240 Bhatikhana, 8200 Barisal Bangladesh</a>
+        </div>
+      </div>
+      <div class="contact-us__item">
+        <div class="contact-us__image-container contact-us__image-container--phone">
+          <img class="contact-us__image" src="img/laptop-phone.jpg" alt="laptop and phone">
+        </div>
+        <h3 class="contact-us__title">phone</h3>
+        <div class="contact-us__description">
+          <a href="tel:+00 11 66 99 66 44" class="contact-us__link" target="_blank">+00 11 66 99 66 44</a>
+          <a href="tel:11 99 66 44 065" class="contact-us__link">11 99 66 44 065</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
   <!-- Start // .form -->
   <div class="form">
     <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
@@ -665,19 +787,16 @@
 
   <!-- start // .map -->
   <div class="map">
-    <iframe class="map__card"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10164.485581494264!2d30.50604516977539!3d50.438839449999996!2m3!1f0!2f0!3f0!3m2!1i024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed482dcdab9f23ad!2sMate+academy!5e0!3m2!1suk!2sua!4v1543951452113"
-            frameborder="0" style="border:0" allowfullscreen>
+    <iframe class="map__card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10164.485581494264!2d30.50604516977539!3d50.438839449999996!2m3!1f0!2f0!3f0!3m2!1i024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed482dcdab9f23ad!2sMate+academy!5e0!3m2!1suk!2sua!4v1543951452113" style="border:0" allowfullscreen>
     </iframe>
     <h4 class="map__title">FIND US ON THE MAP</h4>
   </div>
-  <!-- End // .map -->
+ <!-- End // .map -->
 
   <!-- Start // .footer -->
   <footer class="page-footer section-title">
     <div class="page-footer__title page-header__home-link">Bouncy</div>
-    <div class="page-footer__copyright section-title__paragraph">Copyright 2018. All rights Reserved. Dream team.
-    </div>
+    <div class="page-footer__copyright section-title__paragraph">Copyright 2018. All rights Reserved. Dream team.</div>
     <div>
       <a href="#" class="fa fa-facebook"></a>
       <a href="#" class="fa fa-twitter"></a>

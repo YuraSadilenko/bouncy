@@ -107,7 +107,7 @@
     width: 80%;
     overflow: hidden;
     position: relative;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: -50%;
     transition: all 0.2s;
@@ -157,23 +157,6 @@
 
   &__bottom-block {
     margin-top: 40px;
-    background: url(img/t-shirt.jpg) center no-repeat;
-    background-size: cover;
-  }
-
-  &__bottom-block-mask {
-    background: $dark-blue;
-    padding: 58px 0 57px;
-  }
-
-  &__bottom-block-paragraph {
-    font: 2rem $open-sans;
-    color: $btn-color-white;
-    letter-spacing: 2px;
-
-    &--select {
-      font-weight: bold;
-    }
   }
 
   &__bottom-block-btn {
