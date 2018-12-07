@@ -73,3 +73,14 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 524px) {
+  .subscribe__content {
+    padding: 0 3rem;
+  }
+
+  .subscribe__item--btn {
+    width: 100%;
+    max-width: 35.6rem;
+  }
+}
