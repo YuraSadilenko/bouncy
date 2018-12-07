@@ -1765,7 +1765,7 @@ html {
   width: 80%;
   overflow: hidden;
   position: relative;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: -50%;
   transition: all 0.2s;
@@ -3437,4 +3437,87 @@ html {
 .map__card {
   width: 100%;
   height: 496px;
+}
+
+.subscribe {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 39.2rem;
+  align-items: flex-end;
+}
+
+.subscribe__background {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/mountains.jpg");
+  background-position: bottom;
+  background-size: cover;
+  filter: grayscale(100%) brightness(20%);
+}
+
+.subscribe__content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.subscribe__section {
+  left: 0;
+  right: 0;
+  margin: 6.3rem auto;
+}
+
+.subscribe__section--text {
+  width: 46.3rem;
+}
+
+.subscribe__section--title {
+  color: #f3f3f3;
+}
+
+.subscribe__section--paragraph {
+  color: #81868e;
+  line-height: 2.5rem;
+}
+
+.subscribe__section--form {
+  display: block;
+  width: 30%;
+}
+
+.subscribe__item--btn {
+  height: 4rem;
+  width: 15.1rem;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+.subscribe__item--input {
+  height: 3.9rem;
+  width: 35.6rem;
+}
+
+.subscribe__input {
+  font: 1.4rem "Open Sans", sans-serif;
+  color: #f3f3f3;
+  background-color: transparent;
+}
+
+.subscribe__label {
+  left: 0;
+  font: 1.4rem "Open Sans", sans-serif;
+  color: #f3f3f3;
+  opacity: 1;
+}
+
+@media screen and (max-width: 524px) {
+  .subscribe__content {
+    padding: 0 3rem;
+  }
+  .subscribe__item--btn {
+    width: 100%;
+    max-width: 35.6rem;
+  }
 }
