@@ -399,7 +399,7 @@ body {
 
 .slider-box-comment {
   display: none;
-  height: 50rem;
+  height: 30rem;
 }
 
 .progress progress[value="0"] + .progress-value:before {
@@ -2230,7 +2230,7 @@ body {
 
 .slider-box-comment {
   display: none;
-  height: 50rem;
+  height: 30rem;
 }
 
 .team {
@@ -3034,13 +3034,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: #81868e;
+  font-size: 1.5rem;
   font-weight: 300;
   padding: 5rem 0;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 .comments__slider {
-  height: 50rem;
+  display: flex;
+  justify-content: space-between;
+  height: 35rem;
   width: 100%;
   background: #fff;
   margin: auto;
@@ -3049,8 +3053,45 @@ body {
 .comments__person {
   width: 15rem;
   height: 15rem;
-  border: 1px solid #000;
   border-radius: 50%;
+  margin: auto;
+}
+
+.comments__person--nick {
+  background-image: url("../img/comment.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.comments__person--fury {
+  background-image: url("../img/fury.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 35%;
+  background-size: cover;
+}
+
+.comments__text-box {
+  width: 70%;
+  margin: auto;
+}
+
+.comments__text-box--comment {
+  width: 90%;
+  margin-bottom: 2rem;
+  line-height: 2;
+}
+
+.comments__text-box--name {
+  width: 90%;
+  text-transform: uppercase;
+  color: #19bd9a;
+  font-weight: 700;
+}
+
+.comments__text-box--position {
+  width: 90%;
+  text-transform: uppercase;
 }
 
 .our-price {

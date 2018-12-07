@@ -2,12 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: $open-sans;
+  color: $gray;
+  font-size: 1.5rem;
   font-weight: 300;
   padding: 5rem 0;
-  font-family: $source-sans;
 
   &__slider {
-    height: 50rem;
+    display: flex;
+    justify-content: space-between;
+    height: 35rem;
     width: 100%;
     background: #fff;
     margin: auto;
@@ -16,8 +20,45 @@
   &__person {
     width: 15rem;
     height: 15rem;
-    border: 1px solid #000;
     border-radius: 50%;
+    margin: auto;
 
+    &--nick {
+      background-image: url('../img/comment.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &--fury {
+      background-image: url('../img/fury.jpg');
+      background-repeat: no-repeat;
+      background-position-x: 35%;
+      background-size: cover;
+
+    }
+  }
+
+  &__text-box {
+    width: 70%;
+    margin: auto;
+
+    &--comment {
+      width: 90%;
+      margin-bottom: 2rem;
+      line-height: 2;
+    }
+
+    &--name {
+      width: 90%;
+      text-transform: uppercase;
+      color: $green-color;
+      font-weight: 700;
+    }
+
+    &--position {
+      width: 90%;
+      text-transform: uppercase;
+    }
   }
 }
