@@ -3047,6 +3047,22 @@ body {
   }
 }
 
+.question {
+  text-align: center;
+  background-image: url("../img/loved_us.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6rem 10rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.question__text {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 .comments {
   display: flex;
   flex-direction: column;
