@@ -10,18 +10,18 @@
           crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="page-header">
+<header class="page-header" id="header">
   <div class="page-header__top">
     <span class="page-header__logo"><a class="page-header__home-link" href="#">bouncy</a></span>
     <nav class="page-header__main-nav">
       <ul class="page-header__list">
-        <li class="page-header__item"><a href="#" class="page-header__link">Hello</a></li>
+        <li class="page-header__item"><a href="#main-info" class="page-header__link">Hello</a></li>
         <li class="page-header__item"><a href="#" class="page-header__link">About</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Services</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Portfolio</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Team</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Blog</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Contact</a></li>
+        <li class="page-header__item"><a href="#services" class="page-header__link">Services</a></li>
+        <li class="page-header__item"><a href="#portfolio" class="page-header__link">Portfolio</a></li>
+        <li class="page-header__item"><a href="#team" class="page-header__link">Team</a></li>
+        <li class="page-header__item"><a href="#news" class="page-header__link">Blog</a></li>
+        <li class="page-header__item"><a href="#contanct_us" class="page-header__link">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -80,7 +80,7 @@
   <!-- End // .feature -->
 
   <!-- Start // .our-services -->
-  <div class="our-services">
+  <div class="our-services" id="services">
     <div class="our-services__container">
       <div class="our-services__services-title section-title">
         <h2 class="section-title__title">Our services</h2>
@@ -157,7 +157,7 @@
   <!-- End // .our-services -->
 
   <!-- Start // .impression-section -->
-  <div class="impression-section">
+  <div class="impression-section" id="impression">
     <div class="impression-section__background"></div>
     <div class="impression-section__items">
       <div class="impression-section__text-block">
@@ -188,7 +188,7 @@
   <!-- End // .impression-section -->
 
   <!-- Start // .portfolio -->
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <div class="portfolio__container">
       <div class="section-title portfolio__title">
         <h2 class="section-title__title">The portfolio</h2>
@@ -474,7 +474,7 @@
   <!-- End // .portfolio -->
 
   <!-- Start // .team -->
-  <section class="team">
+  <section class="team" id="team">
     <div class="section-title">
       <h3 class="section-title__title">team</h3>
       <p class="section-title__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -637,7 +637,7 @@
 
 
   <!-- start // comments-->
-  <section class="comments">
+  <section class="comments" id="comments">
     <div class="section-title">
       <h3 class="section-title__title">testimonials</h3>
       <p class="section-title__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -708,7 +708,7 @@
   <!-- End // .comments -->
 
   <!-- start // .news -->
-  <section class="news">
+  <section class="news" id="news">
     <div class="news__wrap"> 
 
       <div class="news__heading-box">
@@ -737,7 +737,7 @@
   <!-- end // .news -->
 
   <!-- start // .our-price -->
-  <div class="our-price">
+  <div class="our-price" id="price">
     <div class="our-price__container">
       <div class="our-price__price-title section-title">
         <h2 class="section-title__title">Our Price</h2>
@@ -805,7 +805,7 @@
   <!-- End // .our-price -->
 
   <!-- Start // .subscribe -->
-  <div class="subscribe">
+  <div class="subscribe" id="subscribe">
     <div class="subscribe__background"></div>
     <div class="subscribe__content">
       <div class="subscribe__section subscribe__section--text section-title">
@@ -826,7 +826,7 @@
   </div>
   <!-- End // .subscribe -->
 
-  <section class="contact-us">
+  <section class="contact-us" id="contact_us">
     <div class="section-title contact-us__section-title">
       <h2 class="section-title__title">contact us</h2>
       <p class="section-title__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
@@ -867,8 +867,8 @@
     </div>
   </section>
   <!-- Start // .form -->
-  <div class="form">
-    <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+  <div class="form" id="form">
+    <form class="form__content" method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
       <div class="form__row">
         <div class="form__item">
           <input class="form__input" type="text" id="name" name="name" required>

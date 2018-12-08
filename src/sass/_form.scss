@@ -1,10 +1,14 @@
 .form {
-  width: 80%;
+  width: 100%;
   padding: 8rem 0;
-  margin: auto;
   background-color: $btn-color-white;
   font: 1.4rem $open-sans;
   color: $gray;
+
+  &__content {
+    width: 80%;
+    margin:auto;
+  }
 
   &__row {
     display: flex;
