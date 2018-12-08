@@ -1,0 +1,107 @@
+.news {
+  position: relative;
+  background-image: url('../img/news_bg.jpg');
+  background-position: center;
+  background-size: cover;
+  color: $gray;
+  font-family: $open-sans;
+
+  &__wrap {
+    padding: 6rem 10rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+  }
+
+
+  &__heading-box {
+    text-align: left;
+    width: 40rem;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  &__heading{
+    text-transform: uppercase;
+    font-family: $source-sans;
+    margin-bottom: 2rem;
+  }
+
+  &__paragraph {
+    line-height: 2;
+  }
+
+  &__content {
+    width: 85%;
+    margin: auto;
+    line-height: 2;
+  }
+}
+
+.content {
+
+  &__heading{
+    text-transform: capitalize;
+    font-size: 1.6rem;
+  }
+
+  &__author {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+
+    &--author {
+      display: inline-block;
+      color: $green-color;
+      padding-left: .4rem; 
+      transition: .3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__likes {
+    color: $dark-gray;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    width: 60%;
+    line-height: 2;
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    position: relative;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+    padding: .3rem .6rem .3rem .1rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgb(165, 165, 165);
+      opacity: 0;
+      transition: all .7s;
+
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transform: translateY(2.5rem);
+
+    }
+  }
+
+}
