@@ -1,10 +1,14 @@
 .form {
-  width: 80%;
+  width: 100%;
   padding: 8rem 0;
-  margin: auto;
   background-color: $btn-color-white;
   font: 1.4rem $open-sans;
   color: $gray;
+
+  &__content {
+    width: 80%;
+    margin:auto;
+  }
 
   &__row {
     display: flex;
@@ -28,6 +32,7 @@
     font-size: inherit;
     color: $gray;
     resize: none;
+    outline: none;
   }
 
   &__input {
@@ -38,6 +43,7 @@
     border: 1px solid $light-gray;
     font-size: inherit;
     color: $gray;
+    outline: none;
 
     &:valid + .form__label {
       padding: 0;
@@ -61,7 +67,21 @@
     height: 7rem;
     border: none;
     font-weight: normal;
+    outline: none;
     cursor: pointer;
+    transition: all .4s;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 1px 5px 8px rgba(0, 0, 0, .4);
+    }
+
+    &:active,
+    &:visited {
+      transform: translateY(-3px);
+      box-shadow: 1px 3px 7px rgba(0, 0, 0, .4);
+
+    }
   }
 }
 
