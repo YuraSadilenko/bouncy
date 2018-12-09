@@ -10,18 +10,18 @@
           crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="page-header">
+<header class="page-header" id="header">
   <div class="page-header__top">
     <span class="page-header__logo"><a class="page-header__home-link" href="#">bouncy</a></span>
     <nav class="page-header__main-nav">
       <ul class="page-header__list">
-        <li class="page-header__item"><a href="#" class="page-header__link">Hello</a></li>
+        <li class="page-header__item"><a href="#main-info" class="page-header__link">Hello</a></li>
         <li class="page-header__item"><a href="#" class="page-header__link">About</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Services</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Portfolio</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Team</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Blog</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">Contact</a></li>
+        <li class="page-header__item"><a href="#services" class="page-header__link">Services</a></li>
+        <li class="page-header__item"><a href="#portfolio" class="page-header__link">Portfolio</a></li>
+        <li class="page-header__item"><a href="#team" class="page-header__link">Team</a></li>
+        <li class="page-header__item"><a href="#news" class="page-header__link">Blog</a></li>
+        <li class="page-header__item"><a href="#contanct_us" class="page-header__link">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -80,7 +80,7 @@
   <!-- End // .feature -->
 
   <!-- Start // .our-services -->
-  <div class="our-services">
+  <div class="our-services" id="services">
     <div class="our-services__container">
       <div class="our-services__services-title section-title">
         <h2 class="section-title__title">Our services</h2>
@@ -157,7 +157,7 @@
   <!-- End // .our-services -->
 
   <!-- Start // .impression-section -->
-  <div class="impression-section">
+  <div class="impression-section" id="impression">
     <div class="impression-section__background"></div>
     <div class="impression-section__items">
       <div class="impression-section__text-block">
@@ -188,7 +188,7 @@
   <!-- End // .impression-section -->
 
   <!-- Start // .portfolio -->
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <div class="portfolio__container">
       <div class="section-title portfolio__title">
         <h2 class="section-title__title">The portfolio</h2>
@@ -391,6 +391,7 @@
                     </svg>
                   </a>
                 </div>
+              
               </div>
             </div>
           </div>
@@ -455,6 +456,7 @@
                 </div>
               </div>
             </div>
+            <div class="slide-buttons"></div>
           </div>
         </div>
       </div>
@@ -472,7 +474,7 @@
   <!-- End // .portfolio -->
 
   <!-- Start // .team -->
-  <section class="team">
+  <section class="team" id="team">
     <div class="section-title">
       <h3 class="section-title__title">team</h3>
       <p class="section-title__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -482,11 +484,11 @@
 
     <div class="slider">
 
-      <input type="radio" checked="checked" id="slide1" class="slider__radio slider__radio--1" name="slider-selector" />
-      <input type="radio" id="slide2" class="slider__radio slider__radio--2" name="slider-selector" />
-      <input type="radio" id="slide3" class="slider__radio slider__radio--3" name="slider-selector" />
-
-      <div class="slider-box slider-box--one">
+      <input type="radio" checked="checked" id="slide-team-1" class="slider__radio slider__radio--1" name="slider-selector" />
+      <input type="radio" id="slide-team-2" class="slider__radio slider__radio--2" name="slider-selector" />
+      <input type="radio" id="slide-team-3" class="slider__radio slider__radio--3" name="slider-selector" />
+        
+      <div class="slider-box-team slider-box-team--one">
         <div class="team__slider">
           <div class="team__img-box">
             <img class="team__photo" src="./img/team-beard.jpg" alt="first person of rate">
@@ -529,7 +531,7 @@
         </div>
       </div>
 
-      <div class="slider-box slider-box--two">
+      <div class="slider-box-team slider-box-team--two">
         <div class="team__slider">
           <div class="team__img-box">
             <img class="team__photo" src="./img/team-guy.jpg" alt="first person of rate">
@@ -571,8 +573,8 @@
           </div>
         </div>
       </div>
-
-      <div class="slider-box slider-box--three">
+      
+      <div class="slider-box-team slider-box-team--three">
         <div class="team__slider">
           <div class="team__img-box">
             <img class="team__photo" src="./img/team-grany.jpg" alt="first person of rate">
@@ -616,17 +618,126 @@
       </div>
 
       <div class="slider__labels">
-          <label class="slider__labels-item slider__labels-item--first" for="slide1"></label>
-          <label class="slider__labels-item slider__labels-item--second" for="slide2"></label>
-          <label class="slider__labels-item slider__labels-item--third" for="slide3"></label>
+          <label class="slider__labels-item slider__labels-item--first" for="slide-team-1"></label>
+          <label class="slider__labels-item slider__labels-item--second" for="slide-team-2"></label>
+          <label class="slider__labels-item slider__labels-item--third" for="slide-team-3"></label>
       </div>
-
+      
+      
     </div>
   </section>
   <!-- End // .team -->
 
+  <!-- presection to comments // start -->
+  <div class="question">
+    <p class="question__text">already loved us? Let's talk!</p>
+    <a href="#" class="btn btn--light">contact us</a>
+  </div>
+  <!-- presection to comments // start -->
+
+
+  <!-- start // comments-->
+  <section class="comments" id="comments">
+    <div class="section-title">
+      <h3 class="section-title__title">testimonials</h3>
+      <p class="section-title__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Ratione enim corporis culpa eveniet eum! Eos?
+      </p>
+    </div>
+
+    <div class="slider slider--comments">
+
+      <input type="radio" checked="checked" id="slide-comments-1" class="slider__radio-comments slider__radio-comments--1" name="slider" />
+      <input type="radio" id="slide-comments-2" class="slider__radio-comments slider__radio-comments--2" name="slider" />
+      <input type="radio" id="slide-comments-3" class="slider__radio-comments slider__radio-comments--3" name="slider" />
+        
+      <div class="slider-box-comment slider-box-comment--one">
+        <div class="comments__slider">
+          <div class="comments__person comments__person--nick"></div>
+          <div class="comments__text-box ">
+            <p class="comments__text-box comments__text-box--comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quidem vero soluta sit laborum doloribus ullam rerum magni quas quam consectetur? 
+              Odit similique dolore excepturi obcaecati minus sequi suscipit vero. Quam.
+            </p>
+            <p class="comments__text-box comments__text-box--name">nick pertho</p>
+            <p class="comments__text-box comments__text-box--position">founder, artways bd</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-box-comment slider-box-comment--two">
+        <div class="comments__slider">
+          <div class="comments__person comments__person--fury"></div>
+          <div class="comments__text-box ">
+            <p class="comments__text-box comments__text-box--comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quidem vero soluta sit laborum doloribus ullam rerum magni quas quam consectetur? 
+              Odit similique dolore excepturi obcaecati minus sequi suscipit vero. Quam.
+              Odit similique dolore excepturi!
+            </p>
+            <p class="comments__text-box comments__text-box--name">nick fury</p>
+            <p class="comments__text-box comments__text-box--position">director</p>
+          </div>        
+        </div>
+      </div>
+
+      <div class="slider-box-comment slider-box-comment--three">
+        <div class="comments__slider">
+          <div class="comments__person comments__person--nick"></div>
+          <div class="comments__text-box ">
+            <p class="comments__text-box comments__text-box--comment">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quidem vero soluta sit laborum doloribus ullam rerum magni quas quam consectetur? 
+              
+            </p>
+            <p class="comments__text-box comments__text-box--name">cooper luis</p>
+            <p class="comments__text-box comments__text-box--position">FE developer, bd</p>
+          </div>       
+        </div>
+      </div>
+
+      <div class="slider__labels-comment">
+        <label class="slider__labels-comment-item slider__labels-comment-item--first" for="slide-comments-1"></label>
+        <label class="slider__labels-comment-item slider__labels-comment-item--second" for="slide-comments-2"></label>
+        <label class="slider__labels-comment-item slider__labels-comment-item--third" for="slide-comments-3"></label>
+      </div>
+
+    </div>  
+  </section>
+  <!-- End // .comments -->
+
+  <!-- start // .news -->
+  <section class="news" id="news">
+    <div class="news__wrap"> 
+
+      <div class="news__heading-box">
+        <h3 class="news__heading">latest news</h3>
+        <p class="news__paragraph">Lorem ipsum dolor sit, 
+          amet consectetur adipisicing elit. 
+          Expedita reiciendis sint alias?
+        </p>
+      </div>
+
+      <div class="news__content">
+        <h4 class="content__heading">the trading landing pages</h4>
+        <p class="content__author">by <span class="content__author content__author--author">kabir uddin</span> </p>
+        <p class="content__likes">6950 Likes - 243 Comments - 703 shares</p>
+        <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Voluptates alias aliquam magnam molestias nihil dignissimos quod doloremque, 
+          quasi eveniet nesciunt explicabo laudantium, minus nemo ducimus iste quia laboriosam. 
+          Blanditiis ad, repellat saepe impedit facilis aspernatur officiis iusto cum sed iste.
+          Voluptates alias aliquam magnam molestias nihil.
+        </p>
+        <a href="#" class="content__btn">+ read more</a> 
+      </div>
+
+    </div> 
+  </section>
+  <!-- end // .news -->
+
   <!-- start // .our-price -->
-  <div class="our-price">
+  <div class="our-price" id="price">
     <div class="our-price__container">
       <div class="our-price__price-title section-title">
         <h2 class="section-title__title">Our Price</h2>
@@ -694,7 +805,7 @@
   <!-- End // .our-price -->
 
   <!-- Start // .subscribe -->
-  <div class="subscribe">
+  <div class="subscribe" id="subscribe">
     <div class="subscribe__background"></div>
     <div class="subscribe__content">
       <div class="subscribe__section subscribe__section--text section-title">
@@ -715,7 +826,7 @@
   </div>
   <!-- End // .subscribe -->
 
-  <section class="contact-us">
+  <section class="contact-us" id="contact_us">
     <div class="section-title contact-us__section-title">
       <h2 class="section-title__title">contact us</h2>
       <p class="section-title__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
@@ -756,8 +867,8 @@
     </div>
   </section>
   <!-- Start // .form -->
-  <div class="form">
-    <form method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+  <div class="form" id="form">
+    <form class="form__content" method="post" action="https://mate-academy-form-lesson.herokuapp.com/create-application">
       <div class="form__row">
         <div class="form__item">
           <input class="form__input" type="text" id="name" name="name" required>
