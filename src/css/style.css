@@ -4240,9 +4240,9 @@ body {
 }
 
 .contact-us__image-container:hover {
-  -webkit-transform: scaleY(1.1);
-  -ms-transform: scaleY(1.1);
-  transform: scaleY(1.1);
+  -webkit-transform: scaleY(1.05);
+  -ms-transform: scaleY(1.05);
+  transform: scaleY(1.05);
 }
 
 .contact-us__image {
