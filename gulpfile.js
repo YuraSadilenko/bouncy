@@ -3,15 +3,22 @@ var gulp = require("gulp"),
 	browserSync = require("browser-sync"),
 	plumber = require("gulp-plumber"),
 	rename = require("gulp-rename");
+	autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("sass", function() {
-	gulp
-		.src("src/sass/main.scss")
-		.pipe(plumber())
-		.pipe(sass({ outputStyle: "expanded" }))
-		.pipe(rename("style.css"))
-		.pipe(gulp.dest("src/css"))
-		.pipe(browserSync.reload({ stream: true }));
+    gulp
+        .src("src/sass/main.scss")
+        .pipe(plumber())
+        .pipe(sass({ outputStyle: "expanded" }))
+        .pipe(rename("style.css"))
+        .pipe(
+            autoprefixer({
+                browsers: ["last 20 versions"],
+                cascade: false
+            })
+        )
+        .pipe(gulp.dest("src/css"))
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task("watch", ["sass", "browser"], function() {

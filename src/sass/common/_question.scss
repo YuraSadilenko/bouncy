@@ -1,0 +1,15 @@
+.question {
+  text-align: center;
+  background-image: url('../img/loved_us.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6rem 10rem;
+  font-family: $open-sans;
+
+  &__text {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
