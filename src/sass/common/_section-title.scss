@@ -3,6 +3,13 @@
   max-width: 100%;
   text-align: center;
 
+  @media (min-width:300px) and (max-width: 767px) {
+    & {
+      width: 95%;
+    }
+  }
+
+
   &__title {
     color: $dark-gray;
     font: 2rem $source-sans;

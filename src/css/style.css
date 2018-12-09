@@ -1503,6 +1503,12 @@ body {
   text-align: center;
 }
 
+@media (min-width: 300px) and (max-width: 767px) {
+  .section-title {
+    width: 95%;
+  }
+}
+
 .section-title__title {
   color: #464646;
   font: 2rem "Source Sans Pro", sans-serif;
@@ -2599,6 +2605,12 @@ body {
   width: 463px;
   max-width: 100%;
   text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .section-title {
+    width: 95%;
+  }
 }
 
 .section-title__title {
