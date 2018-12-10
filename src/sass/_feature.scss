@@ -16,6 +16,10 @@
     background-size: cover;
     height: 320px;
     position: relative;
+  }
+
+  &__cross {
+    position: relative;
 
     &:before {
       content: "";
@@ -27,6 +31,7 @@
       width: 0;
       height: 35px;
       border-left: 1px solid $btn-color-white;
+      transition: 0.2s;
     }
 
     &:after {
@@ -38,6 +43,16 @@
       transform: translate(-50%, -50%);
       width: 35px;
       border-top: 1px solid $btn-color-white;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      &:before {
+        height: 0;
+      }
+      &:after {
+        width: 0;
+      }
     }
   }
 
@@ -77,6 +92,12 @@
     &--brand {
       &:after {
         content: "branding";
+      }
+    }
+
+    &--whiskey {
+      &:after {
+        content: "whiskey";
       }
     }
 
