@@ -1909,6 +1909,18 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .question {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .question {
+    padding: 5rem 0;
+  }
+}
+
 .question__text {
   color: #fff;
   text-transform: capitalize;
