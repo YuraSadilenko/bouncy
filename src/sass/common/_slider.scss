@@ -5,13 +5,12 @@
   &--comments {
     width: 90%;
     padding: 5rem 0;
+    
   }
 
-  @media (min-width: 300px) and (max-width: 767px) {
-    .slider {
-      display: flex;
-      flex-direction: column;
-    }
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
   }
 
   &__radio {
@@ -112,48 +111,37 @@
     border-radius: 50%;
     cursor: pointer;
 
-    @media (min-width: 768px) and (max-width: 1199px) {
-      & {
-        width: 1rem;
-        height: 1rem;
-
-      }
+    @media (min-width:768px) and (max-width: 1199px) {
+      width: 1rem;
+      height: 1rem;
     }
-
-    @media (min-width: 1200px) and (max-width: 1800) {
-      & {
-        width: 2.3rem;
-        height: 2.3rem;
-        border: 2px solid $green-color;
-
-      }
+  
+    @media (min-width:1200px) and (max-width: 1800) {
+      width: 2.3rem;
+      height: 2.3rem;
+      border: 2px solid $green-color;
     }
   }
 }
 
 .slider__labels-comment {
   position: absolute;
-  bottom: 15%;
+  bottom: 21%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
 
-  @media (min-width: 250px) and (max-width: 767px) {
-    & {
-      bottom: -15%;
-    }
+
+  @media (max-width: 767px) {
+    bottom: 20%;
   }
 
-  @media (min-width: 768px) and (max-width: 1199px) {
-    & {
-      bottom: 18%;
-    }
+  @media (min-width:768px) and (max-width: 1199px) {
+    bottom: 22%;
   }
 
-  @media (min-width: 1200px) and (max-width: 1800) {
-    & {
-      bottom: 10%;
-    }
+  @media (min-width:1200px) and (max-width: 1800) {
+    bottom: 10%;
   }
 
   &-item::after {
@@ -166,15 +154,15 @@
     border-radius: 50%;
     cursor: pointer;
 
-    @media (min-width: 768px) and (max-width: 1199px) {
+    @media (min-width:768px) and (max-width: 1199px) {
       width: 1rem;
       height: 1rem;
     }
-
-    @media (min-width: 1200px) and (max-width: 1800px) {
-        width: 2.3rem;
-        height: 2.3rem;
-        border: 2px solid $green-color;
+  
+    @media (min-width:1200px) and (max-width: 1800) {
+      width: 2.3rem;
+      height: 2.3rem;
+      border: 2px solid $green-color;
     }
   }
 }
@@ -183,12 +171,10 @@
 
   &-team {
     display: none;
-    height: 50rem;
   }
 
   &-comment {
     display: none;
-    height: 30rem;
   }
 }
 

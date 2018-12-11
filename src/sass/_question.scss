@@ -6,6 +6,16 @@
   padding: 6rem 10rem;
   font-family: $open-sans;
 
+  @media (min-width:768px) and (max-width: 1199px) {
+    padding: 5rem 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 5rem 0;
+  }
+
+
+
   &__text {
     color: #fff;
     text-transform: capitalize;

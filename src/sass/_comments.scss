@@ -8,39 +8,30 @@
   font-weight: 300;
   padding: 5rem 0 10rem;
 
-  @media (min-width: 768px) and (max-width: 1199px) {
-    & {
-      font-size: 1.1rem;
-      line-height: 1;
-    }
+  @media (min-width:768px) and (max-width: 1199px) {
+    font-size: 1.1rem;
+    line-height: 1;
   }
 
-  @media (min-width: 300px) and (max-width: 767px) {
-    & {
-      line-height: 1;
-    }
+  @media (min-width:300px) and (max-width: 767px) {
+    line-height: 1;
   }
 
   &__slider {
     display: flex;
-    height: 35rem;
     width: 100%;
     background: #fff;
     margin: auto;
+    padding: 8rem 2rem;
 
-    @media (min-width: 768px) and (max-width: 1199px) {
-      & {
-        height: 30rem;
-      }
+    @media (min-width:768px) and (max-width: 1199px) {
+      padding: 6rem 1rem;
     }
 
-    @media (min-width: 300px) and (max-width: 767px) {
-      & {
-        height: 45rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-      }
+    @media (min-width:300px) and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
     }
   }
 
@@ -50,18 +41,13 @@
     border-radius: 50%;
     margin: auto;
 
-    @media (min-width: 768px) and (max-width: 1199px) {
-      & {
-        width: 12rem;
-        height: 12rem;
-
-      }
+    @media (min-width:768px) and (max-width: 1199px) {
+      width: 12rem;
+      height: 12rem;
     }
 
-    @media (min-width: 300px) and (max-width: 767px) {
-      & {
-        display: none;
-      }
+    @media (min-width:300px) and (max-width: 767px) {
+      display: none;
     }
 
     &--nick {
@@ -95,10 +81,8 @@
       color: $green-color;
       font-weight: 700;
 
-      @media (min-width: 300px) and (max-width: 767px) {
-        & {
-          margin-bottom: 2rem;
-        }
+      @media (min-width:300px) and (max-width: 767px) {
+        margin-bottom: 2rem;
       }
 
     }
@@ -108,11 +92,11 @@
       text-transform: uppercase;
     }
 
-    @media (min-width: 768px) and (max-width: 1199px) {
+    @media (min-width:768px) and (max-width: 1199px) {
       width: 80%;
     }
 
-    @media (min-width: 300px) and (max-width: 767px) {
+    @media (min-width:300px) and (max-width: 767px) {
       display: flex;
       flex-direction: column-reverse;
       align-self: flex-start;
