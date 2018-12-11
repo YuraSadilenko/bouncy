@@ -39,19 +39,19 @@
     }
 
     &--email {
-      &:after {
+      &::after {
         background-image: url("../img/mail.png");
       }
     }
 
     &--location {
-      &:after {
+      &::after {
         background-image: url("../img/location.png");
       }
     }
 
     &--phone {
-      &:after {
+      &::after {
         background-image: url("../img/phone.png");
       }
     }

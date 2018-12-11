@@ -13,7 +13,7 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 
-    &:after {
+    &::after {
       content: "";
       display: inline-block;
       background: url(img/arrow-down.png);
@@ -25,7 +25,7 @@
     }
   }
 
-  &:before {
+  &::before {
     content: "";
     background: $dark-black;
     position: absolute;
@@ -36,7 +36,7 @@
     transition: 0.3s;
   }
 
-  &:after {
+  &::after {
     content: "";
     background: $dark-black;
     position: absolute;
@@ -56,7 +56,7 @@
       bottom: 100%;
     }
 
-    &:after {
+    &::after {
       top: 100%;
     }
   }

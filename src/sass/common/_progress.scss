@@ -75,7 +75,7 @@
   -moz-transition: width 1s linear;
   -ms-transition: width 1s linear;
   transition: width 1s linear;    
-  &:after
+  &::after
   {
   -webkit-animation: progress_bar 0.8s linear infinite;
   -moz-animation: progress_bar 0.8s linear infinite;

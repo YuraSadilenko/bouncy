@@ -21,7 +21,7 @@
   &__cross {
     position: relative;
 
-    &:before {
+    &::before {
       content: "";
       display: block;
       position: absolute;
@@ -34,7 +34,7 @@
       transition: 0.2s;
     }
 
-    &:after {
+    &::after {
       content: "";
       display: block;
       position: absolute;
@@ -50,7 +50,7 @@
       &:before {
         height: 0;
       }
-      &:after {
+      &::after {
         width: 0;
       }
     }
@@ -78,7 +78,7 @@
     background: transparent;
     transition: 0.3s;
 
-    &:after {
+    &::after {
       content: "vintage";
       text-transform: uppercase;
       position: absolute;
@@ -90,7 +90,7 @@
       letter-spacing: 0.2rem;
     }
     &--brand {
-      &:after {
+      &::after {
         content: "branding";
       }
     }
@@ -103,7 +103,7 @@
 
     &:hover {
       background: $dark-black;
-      &:after {
+      &::after {
         color: $btn-color-white;
       }
     }
