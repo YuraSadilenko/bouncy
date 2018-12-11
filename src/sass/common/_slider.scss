@@ -8,7 +8,7 @@
     
   }
 
-  @media (min-width:300px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
   }
@@ -132,7 +132,7 @@
   text-align: center;
 
 
-  @media (min-width:250px) and (max-width: 767px) {
+  @media (max-width: 767px) {
     bottom: 20%;
   }
 
