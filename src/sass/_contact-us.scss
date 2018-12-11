@@ -1,6 +1,7 @@
 .contact-us {
   padding: 8rem 0;
   background-color: $light-gray;
+  overflow: hidden;
 
   &__section-title {
     margin: 0 auto 6rem;
@@ -17,14 +18,14 @@
     padding-bottom: 3rem;
     width: 29rem;
     text-align: center;
-    background-color: $btn-color-white
+    background-color: $btn-color-white;
   }
 
   &__image-container {
     position: relative;
-    transition: .3s;
+    transition: 0.3s;
 
-    &::after {
+    &:after {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -38,26 +39,25 @@
     }
 
     &--email {
-      &::after {
+      &:after {
         background-image: url("../img/mail.png");
       }
     }
 
     &--location {
-      &::after {
+      &:after {
         background-image: url("../img/location.png");
       }
     }
 
     &--phone {
-      &::after {
+      &:after {
         background-image: url("../img/phone.png");
       }
     }
     &:hover {
       transform: scaleY(1.05);
     }
-
   }
 
   &__image {
@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (max-width: 1120px){
+@media screen and (max-width: 1120px) {
   .contact-us {
     &__inner {
       flex-wrap: wrap;

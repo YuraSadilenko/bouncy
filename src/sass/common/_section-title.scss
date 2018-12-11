@@ -15,6 +15,10 @@
     font: 2rem $source-sans;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+
+    &--light {
+      color: $btn-color-white;
+    }
   }
 
   &__paragraph {
@@ -22,9 +26,5 @@
     font: 1.4rem $open-sans;
     margin-top: 40px;
     letter-spacing: 0.1rem;
-
-    &--light {
-      color: $btn-color-white;
-    }
   }
 }
