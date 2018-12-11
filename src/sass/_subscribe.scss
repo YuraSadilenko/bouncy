@@ -26,19 +26,6 @@
     right: 0;
     margin: 6.3rem auto;
 
-    &--text {
-      width: 46.3rem;
-    }
-
-    &--title {
-      color: $light-gray;
-    }
-
-    &--paragraph {
-      color: $gray;
-      line-height: 2.5rem;
-    }
-
     &--form {
       display: block;
       width: 30%;
@@ -46,7 +33,6 @@
   }
 
   &__item {
-
     &--btn {
       height: 4rem;
       width: 15.1rem;
@@ -61,6 +47,7 @@
   }
 
   &__input {
+
     font: 1.4rem "Open Sans", sans-serif;
     color: $light-gray;
     background-color: transparent;
