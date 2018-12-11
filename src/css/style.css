@@ -258,7 +258,7 @@ body {
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
-  .slider .slider {
+  .slider {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -378,7 +378,7 @@ body {
 
 .slider__labels-comment {
   position: absolute;
-  bottom: 15%;
+  bottom: 21%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -388,13 +388,13 @@ body {
 
 @media (min-width: 250px) and (max-width: 767px) {
   .slider__labels-comment {
-    bottom: -15%;
+    bottom: 20%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .slider__labels-comment {
-    bottom: 18%;
+    bottom: 22%;
   }
 }
 
@@ -433,12 +433,10 @@ body {
 
 .slider-box-team {
   display: none;
-  height: 50rem;
 }
 
 .slider-box-comment {
   display: none;
-  height: 30rem;
 }
 
 .progress progress[value="0"] + .progress-value:before {
@@ -1371,7 +1369,6 @@ body {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 50rem;
   padding: 7rem 0;
 }
 
@@ -1398,14 +1395,14 @@ body {
 
 .team__img-box {
   max-width: 27%;
-  height: 100%;
+  height: 35rem;
   overflow: hidden;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .team__img-box {
     max-width: 45%;
-    height: 90%;
+    height: 30rem;
   }
 }
 
@@ -1532,7 +1529,7 @@ body {
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
-  .slider .slider {
+  .slider {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1652,7 +1649,7 @@ body {
 
 .slider__labels-comment {
   position: absolute;
-  bottom: 15%;
+  bottom: 21%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1662,13 +1659,13 @@ body {
 
 @media (min-width: 250px) and (max-width: 767px) {
   .slider__labels-comment {
-    bottom: -15%;
+    bottom: 20%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .slider__labels-comment {
-    bottom: 18%;
+    bottom: 22%;
   }
 }
 
@@ -1707,12 +1704,10 @@ body {
 
 .slider-box-team {
   display: none;
-  height: 50rem;
 }
 
 .slider-box-comment {
   display: none;
-  height: 30rem;
 }
 
 .team {
@@ -1758,7 +1753,6 @@ body {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 50rem;
   padding: 7rem 0;
 }
 
@@ -1785,14 +1779,14 @@ body {
 
 .team__img-box {
   max-width: 27%;
-  height: 100%;
+  height: 35rem;
   overflow: hidden;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .team__img-box {
     max-width: 45%;
-    height: 90%;
+    height: 30rem;
   }
 }
 
@@ -1961,21 +1955,20 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 35rem;
   width: 100%;
   background: #fff;
   margin: auto;
+  padding: 8rem 2rem;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .comments__slider {
-    height: 30rem;
+    padding: 6rem 1rem;
   }
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
   .comments__slider {
-    height: 45rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2590,19 +2583,7 @@ body {
   font-weight: bold;
 }
 
-.section-title {
-  width: 463px;
-  max-width: 100%;
-  text-align: center;
-}
-
-@media (min-width: 300px) and (max-width: 767px) {
-  .section-title {
-    width: 95%;
-  }
-}
-
-.section-title__title {
+.details__paragraph--gray {
   color: #464646;
   font-weight: bold;
 }
