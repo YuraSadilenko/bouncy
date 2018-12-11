@@ -1,35 +1,22 @@
 .impression-section {
-  position: relative;
-  display: flex;
   width: 100%;
-  height: 39.2rem;
-  align-items: flex-end;
   font-family: $source-sans;
 
   &__background {
-    width: 100%;
-    height: 100%;
     background-image: url("../img/back.jpg");
     background-position: center;
     background-size: cover;
-    filter: grayscale(100%) brightness(20%);
+    padding: 70px 0 80px;
   }
 
   &__items {
-    position: absolute;
     width: 80%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    margin: 0 auto;
+    display: flex;
   }
 
   &__text-block {
-    display: inline-block;
-    width: 49%;
-    vertical-align: top;
-    padding: 10rem 0;
+    width: 50%;
   }
 
   &__text-item {
@@ -72,40 +59,67 @@
     }
   }
 
-
   &__video-block {
     position: relative;
-    vertical-align: top;
-    display: inline-block;
     width: 50%;
-    height: 100%;
   }
 
   &__video-background {
     position: absolute;
-    top: -3.8rem;
-    width: 100%;
+    top: -102px;
     right: 0;
-    height: 33.3rem;
-    max-height: 100%;
-    max-width: 41rem;
+    width: 295px;
+    height: 237px;
     text-align: center;
+    background-image: url(../img/monitor.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url("../img/monitor.png");
+  }
+
+  &__container-video {
+    border: solid transparent 1px;
+    border-radius: 9px 9px 0 0;
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    bottom: 0;
+    left: 4px;
+    width: 97%;
+    overflow: hidden;
   }
 
   &__video {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
     width: 100%;
-    height: 100%;
-    max-width: 37.5rem;
-    max-height: 23rem;
   }
 }
 
 @media screen and (max-width: 860px) {
-  .impression-section__video {
-    opacity: 0;
+  .impression-section {
+    &__items {
+      flex-direction: column;
+    }
+
+    &__text-block {
+      width: 100%;
+    }
+
+    &__video-block {
+      position: relative;
+      width: 100%;
+      height: 236px;
+    }
+
+    &__video-background {
+      position: relative;
+      top: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
