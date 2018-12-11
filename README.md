@@ -1,4 +1,4 @@
 # bouncy
 Team project
 
-[link](https://yurasadilenko.github.io/bouncy/src/)
+[link](https://yurasadilenko.github.io/bouncy/build/)

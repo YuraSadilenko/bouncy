@@ -5,6 +5,10 @@
   background-color: $btn-color-white;
 
   &__title {
+    font-family: $big-john;
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
     color: $dark-gray;
   }
 
