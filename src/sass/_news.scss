@@ -13,9 +13,7 @@
     background-color: rgba(0, 0, 0, 0.4);
 
     @media (min-width: 250px) and (max-width: 749px) {
-      & {
-        padding: 1rem;
-      }
+      padding: 1rem;
     }
   }
 
@@ -26,16 +24,12 @@
     margin-bottom: 4rem;
 
     @media (min-width: 750px) and (max-width: 1100px) {
-      & {
-        width: 90%;
-      }
+      width: 90%;
     }
 
     @media (min-width: 250px) and (max-width: 749px) {
-      & {
-        width: 95%;
-        text-align: center;
-      }
+      width: 95%;
+      text-align: center;
     }
   }
 
@@ -55,10 +49,8 @@
     line-height: 2;
 
     @media (min-width: 250px) and (max-width: 749px) {
-      & {
-        width: 95%;
-        text-align: center;
-      }
+      width: 95%;
+      text-align: center;
     }
   }
 }
@@ -68,10 +60,8 @@
     text-transform: capitalize;
     font-size: 1.6rem;
     @media (min-width: 250px) and (max-width: 749px) {
-      & {
-        width: 95%;
-        text-align: center;
-      }
+      width: 95%;
+      text-align: center;
     }
   }
 
@@ -99,10 +89,8 @@
     margin-bottom: 2rem;
 
     @media (min-width: 250px) and (max-width: 749px) {
-      & {
-        width: 95%;
-        text-align: center;
-      }
+      width: 95%;
+      text-align: center;
     }
   }
 
@@ -113,16 +101,12 @@
     margin-bottom: 2rem;
 
     @media (min-width: 750px) and (max-width: 1100px) {
-      & {
         width: 90%;
-      }
     }
 
     @media (min-width: 250px) and (max-width: 749px) {
-      & {
         width: 100%;
         text-align: center;
-      }
     }
   }
 
@@ -153,10 +137,8 @@
     }
 
     @media (min-width: 250px) and (max-width: 749px) {
-      & {
         width: 95%;
         margin: auto;
-      }
     }
   }
 }
